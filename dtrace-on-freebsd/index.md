@@ -1,0 +1,8 @@
+---
+title: "DTrace on FreeBSD?"
+date: "2005-08-16"
+categories: 
+  - "solaris"
+---
+
+One of the exciting things about [OpenSolaris](http://opensolaris.org) is that it's released under a license -- the [CDDL](http://opensolaris.org/os/about/faq/licensing_faq/) -- that allows ports of individual components to other systems. In particular, at my [OSCON presentation](/resources/bmc/dtrace_oscon.pdf) two weeks ago, I discussed some of the expertise required to port one such component, [DTrace](http://opensolaris.org/os/community/dtrace/), to another system. I'm happy to now report that [Devon O'Dell](http://www.sitetronics.com/wordpress/) has started working on a port to one such system, FreeBSD. This has been [talked about before](http://groups.google.com/group/sol.lists.freebsd.hackers/browse_frm/thread/ad16e6e9bfc905c9/c8333bea3c9b491b?tvc=1&q=dtrace+freebsd&hl=en#c8333bea3c9b491b) (in some cases, [with braggadocio](http://meonstuff.blogspot.com/2005/05/solaris-10.html)), but Devon is the first to start the work in earnest. And indeed, work it will be: DTrace isn't a simple system, and it has several dependencies on other, Solaris-specific system components. That said, it should certainly be possible, and we on [Team DTrace](http://www.flickr.com/photos/66572791@N00/18206393/) are available to help out in any way we can. So if you're interested in working on this, you should [ping Devon](mailto:dodell@offmyserver.com) -- I know that he'll welcome the help. And if you have specific questions about DTrace internals (or anything, for that matter), swing by [#opensolaris](irc://irc.freenode.net/opensolaris) and join the party!
