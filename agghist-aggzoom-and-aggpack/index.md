@@ -61,7 +61,7 @@ dtrace: description 'syscall:::entry' matched 233 probes
 
 ```
 
-Brendan's observation was that it would be neat to (optionally) use the histogram-style aggregation printing with these count()/sum() aggregations to be able to more easily differentiate values. For that, we have the new "`\-x agghist`" option:
+Brendan's observation was that it would be neat to (optionally) use the histogram-style aggregation printing with these count()/sum() aggregations to be able to more easily differentiate values. For that, we have the new "`-x agghist`" option:
 
 ```
 # dtrace -n syscall:::entry'{@[execname] = count()}' -x agghist
@@ -125,7 +125,7 @@ It's obviously the same information, but presented with a quicker visual cue as 
 
 The DTrace histogram-style output came directly from [lockstat](https://www.illumos.org/man/1M/lockstat), which proceeded it by several years. lockstat was important for DTrace in several ways: aside from showing the power of production instrumentation, lockstat pointed to the need for first-class aggregations, for disjoint instrumentation providers and for multiplexed consumers (for which it was repaid by having its guts ripped out, being reimplemented as both a [DTrace provider](http://dtrace.org/guide/chapter18.html) and a DTrace consumer). Due to some combination of my laziness and my reverence for the lockstat-style histogram, I simply lifted the lockstat processing code -- which means I inherited (or stole, depending on your perspective) the decisions [Jeff](http://www.eweek.com/c/a/IT-Management/Suns-ZFS-Creator-to-Quit-Oracle-and-Join-Startup-519195/) had made with regard to histogram rendering. In particular, lockstat determines the height of a bar by taking the bucket's share of the total and multiplying it by the full height of the histogram. That is, if you add up all of the heights of all of the bars, they will add up to the full height of the histogram. The benefit of this is that it quickly tells you relative distribution: if you see a full-height bar, you know that that bucket represents essentially all of the values. But the problem is that if the number of buckets is large and/or the values of those buckets are relatively evenly distributed, the result is a bunch of very short bars (or worse, zero height bars) and dead whitespace. This can become so annoying to DTrace users that Brendan has been known to observe that this is the one improvement over DTrace that he can point to in [SystemTap](http://dtrace.org/blogs/brendan/2011/10/15/using-systemtap/): that instead of dividing the height of the histogram among all of the bars, each bar has a height in proportion to the histogram height that is its value in proportion to the bucket of greatest value. Of course, the shape of the distribution doesn't change -- one simply is automatically scaling the height of the highest bar to the height of the histogram and adjusting all other bars accordingly.
 
-To allow for this behavior, I added "`\-x aggzoom`"; running the same example as above with this new option:
+To allow for this behavior, I added "`-x aggzoom`"; running the same example as above with this new option:
 
 ```
 # dtrace -n syscall:::entry'{@[execname] = count()}' -x agghist -x aggzoom
@@ -679,7 +679,7 @@ dtrace: description 'syscall:::return' matched 233 probes
 
 ```
 
-For those keeping score, that would be 482 lines of output -- and that was for just a couple of seconds. Brendan's observation was that it would be great to tip these aggregations on their side (so their bars point up-and-down, not left-to-right) -- with the output for each key appearing on one line. This is clearly a great idea, and "`\-x aggpack`" was born:
+For those keeping score, that would be 482 lines of output -- and that was for just a couple of seconds. Brendan's observation was that it would be great to tip these aggregations on their side (so their bars point up-and-down, not left-to-right) -- with the output for each key appearing on one line. This is clearly a great idea, and "`-x aggpack`" was born:
 
 ```
 # dtrace -n syscall:::entry'{self->ts = vtimestamp}' \
@@ -817,7 +817,7 @@ dtrace: description 'syscall:::return' matched 233 probes
 
 ```
 
-Delicious! (Assuming, of course, that these look right for you -- which they may or may not, depending on how your monospaced font renders the Unicode Block Elements.) After one look at the Unicode Block Elements, it clearly had to be the default behavior -- but if your terminal is rendered in a font that can't display the UTF-8 encodings of these characters (less common) or if they render in a way that is not monospaced despite being in a putatively monospaced font (more common), I also added a "`\-x encoding`" option that can be set to "`ascii`" to force the ASCII output.
+Delicious! (Assuming, of course, that these look right for you -- which they may or may not, depending on how your monospaced font renders the Unicode Block Elements.) After one look at the Unicode Block Elements, it clearly had to be the default behavior -- but if your terminal is rendered in a font that can't display the UTF-8 encodings of these characters (less common) or if they render in a way that is not monospaced despite being in a putatively monospaced font (more common), I also added a "`-x encoding`" option that can be set to "`ascii`" to force the ASCII output.
 
 Returning to our example, if the above is too much dead space for you, you can combine it with `aggzoom`:
 

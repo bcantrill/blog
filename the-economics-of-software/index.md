@@ -1,8 +1,6 @@
 ---
 title: "The Economics of Software"
 date: "2004-08-29"
-categories: 
-  - "solaris"
 ---
 
 Software is like nothing else in the history of human endeavor:1 unlike everything else we have ever built, software costs nothing to manufacture, and it never wears out. Yet these magical properties are arguably overshadowed by the ugly truth that software remains incredibly expensive to build. This gives rise to some strange economic properties: software's fixed costs are high (very high -- too high), but its variable costs are _zero_. As strange as they are, these economic properties aren't actually unique to software; they are also true (to varying degree) of the products that we have traditionally called "intellectual property." But unlike books or paintings or movies, software is predominantly an industrial good -- it is almost always used as a component in a larger, engineered system. When you take these together -- software's role as an industrial good, coupled with its high fixed costs and zero variable costs -- you get all sorts of strange economic phenomena. For example, doesn't it strike you as odd that your operating system is essentially [free](http://wwws.sun.com/software/solaris/solaris-express/sol_index.html), but your database is still costing you forty grand per CPU? Is a database infinitely more difficult to write than an operating system? (Answer: no.) If not, why the enormous pricing discrepancy?
@@ -54,6 +52,6 @@ To come back to our initial question: why is the OS basically free while the dat
 
 * * *
 
-1 As an aside, I generally hate this rhetorical technique of saying that "\[noun\] is the \[superlative\] \[same noun\] \[verb\] by humankind." It makes it sound like the chimps did this years ago, but we humans have only recently caught up. I regret using this technique myself, so let me clarify: with the notable exception of [gtik2\_applet2](http://www.sun.com/bigadmin/content/dtrace/dtrace_usenix.pdf), the chimps have not yet discovered how to write software.
+1 As an aside, I generally hate this rhetorical technique of saying that "\[noun\] is the \[superlative\] \[same noun\] \[verb\] by humankind." It makes it sound like the chimps did this years ago, but we humans have only recently caught up. I regret using this technique myself, so let me clarify: with the notable exception of [gtik2_applet2](http://www.sun.com/bigadmin/content/dtrace/dtrace_usenix.pdf), the chimps have not yet discovered how to write software.
 
 2 Just to cut off any rabid comments about definitions: by "open source" I only mean that the source code is sufficiently widely and publicly available that customers don't question that its right-to-use is (and will always be) free. This may or may not mean OSI-approved, and it may or may not mean GPL. And of course, many customers have discovered that open source alone doesn't solve the problem. You need someone to support it -- and the company offering support begins to look, act and smell a lot like a traditional, rapacious software company. (Indeed, FYO point may ultimately be renamed the "FYRH point.") You still need open standards, open APIs, portable languages and so on...

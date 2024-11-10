@@ -11,7 +11,7 @@ Second, even if one gets an entirely correct result, it's really only correct wi
 
 So take all of this as disclaimer: I am not trying to draw large conclusions about "C vs. Rust" here. To the contrary, I think that it is a reasonable assumption that, for any task, a lower-level language can always be made to outperform a higher-level one. But with that said, a pesky fact remains: I reimplemented a body of C software in Rust, and it performed better for the same task; what's going on? And is there anything broader we _can_ say about these results?
 
-To explore this, I ran some statemap rendering tests on SmartOS on a single-socket Haswell server (Xeon E3-1270 v3) running at 3.50GHz. The C version was compiled with GCC 7.3.0 with `\-O2` level optimizations; the Rust version was compiled with 1.29.0 with `\--release`. All of the tests were run bound to a processor set containing a single core; all were bound to one logical CPU within that core, with the other logical CPU forced to be idle. [cpustat](https://illumos.org/man/1m/cpustat) was used to gather CPU performance counter data, with one number denoting one run with `pic0` programmed to that CPU performance counter. The [input file](https://us-east.manta.joyent.com/bcantrill/public/statemap/pg-zfs.out.gz) (~30MB compressed) contains 3.5M state changes, and in the default config will generate a [~6MB SVG](https://us-east.manta.joyent.com/bcantrill/public/statemap/pg-zfs.svg).
+To explore this, I ran some statemap rendering tests on SmartOS on a single-socket Haswell server (Xeon E3-1270 v3) running at 3.50GHz. The C version was compiled with GCC 7.3.0 with `-O2` level optimizations; the Rust version was compiled with 1.29.0 with `--release`. All of the tests were run bound to a processor set containing a single core; all were bound to one logical CPU within that core, with the other logical CPU forced to be idle. [cpustat](https://illumos.org/man/1m/cpustat) was used to gather CPU performance counter data, with one number denoting one run with `pic0` programmed to that CPU performance counter. The [input file](https://us-east.manta.joyent.com/bcantrill/public/statemap/pg-zfs.out.gz) (~30MB compressed) contains 3.5M state changes, and in the default config will generate a [~6MB SVG](https://us-east.manta.joyent.com/bcantrill/public/statemap/pg-zfs.svg).
 
 Here are the results for a subset of the counters relating to the cache performance:
 
@@ -92,15 +92,15 @@ And now the same thing, but against the adjacent valley of better performance at
 
 ```
 
-The samples in `btree::search::search\_tree` are roughly the same -- but the poorly performing one has many more samples in `HashMap<K, V, S>::insert` (4123 vs. 2948). What is going on? The [HashMap](https://doc.rust-lang.org/std/collections/struct.HashMap.html) implementation in Rust uses [Robin Hood hashing](https://en.wikipedia.org/wiki/Hash_table#Robin_Hood_hashing) and linear probing -- which means that hash maps must be resized when they hit a certain load factor. (By default, the [hash map load factor is 90.9%](https://github.com/rust-lang/rust/blob/70073ec61d0d56bca45b9bd40659bb75799cd273/src/libstd/collections/hash/map.rs#L43-L63).) And note that [I am using hash maps to effectively implement a doubly linked list](https://www.youtube.com/watch?v=aWbGPMxs0AM#t=56m55s): I will have a number of hash maps that -- between them -- will contain the specified number of rectangles. Given that we only see this at particular sizes (and given that the distance between peaks increases exponentially with respect to the number of rectangles), it seems entirely plausible that at some numbers of rectangles, the hash maps will grow large enough to induce quite a bit more probing, but not _quite_ large enough to be resized.
+The samples in `btree::search::search_tree` are roughly the same -- but the poorly performing one has many more samples in `HashMap<K, V, S>::insert` (4123 vs. 2948). What is going on? The [HashMap](https://doc.rust-lang.org/std/collections/struct.HashMap.html) implementation in Rust uses [Robin Hood hashing](https://en.wikipedia.org/wiki/Hash_table#Robin_Hood_hashing) and linear probing -- which means that hash maps must be resized when they hit a certain load factor. (By default, the [hash map load factor is 90.9%](https://github.com/rust-lang/rust/blob/70073ec61d0d56bca45b9bd40659bb75799cd273/src/libstd/collections/hash/map.rs#L43-L63).) And note that [I am using hash maps to effectively implement a doubly linked list](https://www.youtube.com/watch?v=aWbGPMxs0AM#t=56m55s): I will have a number of hash maps that -- between them -- will contain the specified number of rectangles. Given that we only see this at particular sizes (and given that the distance between peaks increases exponentially with respect to the number of rectangles), it seems entirely plausible that at some numbers of rectangles, the hash maps will grow large enough to induce quite a bit more probing, but not _quite_ large enough to be resized.
 
-To explore this hypothesis, it would be great to vary the hash map load factor, but unfortunately [the load factor isn't currently dynamic](https://github.com/rust-lang/rust/blob/70073ec61d0d56bca45b9bd40659bb75799cd273/src/libstd/collections/hash/map.rs#L121-L124). Even then, we could explore this by using [with\_capacity](https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.with_capacity) to preallocate our hash maps, but the statemap code doesn't necessarily know how much to preallocate because the rectangles themselves are spread across many hash maps.
+To explore this hypothesis, it would be great to vary the hash map load factor, but unfortunately [the load factor isn't currently dynamic](https://github.com/rust-lang/rust/blob/70073ec61d0d56bca45b9bd40659bb75799cd273/src/libstd/collections/hash/map.rs#L121-L124). Even then, we could explore this by using [with_capacity](https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.with_capacity) to preallocate our hash maps, but the statemap code doesn't necessarily know how much to preallocate because the rectangles themselves are spread across many hash maps.
 
 Another option is to _replace_ our use of HashMap with a different data structure -- and in particular, we can use a [BTreeMap](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html) in its place. If the load factor isn't the issue (that is, if there is something else going on for which the additional compute time in `HashMap<K, V, S>::insert` is merely symptomatic), we would expect a BTreeMap-based implementation to have a similar issue at the same points.
 
 With Rust, conducting this experiment is absurdly easy:
 
-```
+```diff
 diff --git a/src/statemap.rs b/src/statemap.rs
 index a44dc73..5b7073d 100644
 --- a/src/statemap.rs
@@ -109,8 +109,8 @@ index a44dc73..5b7073d 100644
      last: Option,                      // last start time
      start: Option,                     // current start time
      state: Option,                     // current state
-- rects: HashMap<u64, RefCell>, // rectangles for this entity
-+    rects: BTreeMap<u64, RefCell>, // rectangles for this entity
+-    rects: HashMap<u64, RefCell>,      // rectangles for this entity
++    rects: BTreeMap<u64, RefCell>,     // rectangles for this entity
  }
 
  #[derive(Debug)]
@@ -126,7 +126,7 @@ index a44dc73..5b7073d 100644
              description: None,
              last: None,
              state: None,
-- rects: HashMap::new(),
+-            rects: HashMap::new(),
 +            rects: BTreeMap::new(),
              id: id,
          }

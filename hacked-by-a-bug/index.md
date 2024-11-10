@@ -262,7 +262,7 @@ Then there was the oddity of the tweet itself. There was no caption -- just the 
 
 ```
 
-Note in particular that the media has a `source\_status\_id\_str` of 775378264772775936; it's from [this tweet](https://twitter.com/MattAndersonBBC/status/775378264772775936/) roughly an hour before mine from [Matt Anderson](https://twitter.com/MattAndersonBBC), the BBC Culture editor who (I gather) is Berlin-based.
+Note in particular that the media has a `source_status_id_str` of 775378264772775936; it's from [this tweet](https://twitter.com/MattAndersonBBC/status/775378264772775936/) roughly an hour before mine from [Matt Anderson](https://twitter.com/MattAndersonBBC), the BBC Culture editor who (I gather) is Berlin-based.
 
 Why would someone who had just hacked my account burn it by tweeting an innocuous (if idiosyncratic) photo of campaign posters on the streets of Berlin?! Suddenly this is feeling less like I've been hacked, and more like I'm the victim of data corruption.
 

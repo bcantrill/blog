@@ -182,7 +182,7 @@ After having listed all probes and counted them, my next invocation of `dtrace` 
 
 ```
 
-I then explain that to _enable_ these probes (instead of just listing them), I need to merely not include the "`\-l`":
+I then explain that to _enable_ these probes (instead of just listing them), I need to merely not include the "`-l`":
 
 ```
 # dtrace -n syscall:::entry
@@ -766,7 +766,7 @@ CPU FUNCTION
 
 ```
 
-The times in the above are all in nanoseconds. That is, the call to `\_get\_thr\_data` was 2,276 nanoseconds after we called `defopen`, the first call to `thr\_getspecific` was 6,214 nanoseconds, and so on. Note the big jump in `\_\_open` above: we spent over sixty microseconds (334,013 - 271,268 > 60,000) in that one function. What happened there? We went into the kernel of course. (Remember, we found `defopen` by aggregating on the user stack from the `open` system call.) We may wish to know _everything_ -- kernel _and_ user -- that happens from `defopen`. To do this, go back to the original `dhcp.d` and change this:
+The times in the above are all in nanoseconds. That is, the call to `_get_thr_data` was 2,276 nanoseconds after we called `defopen`, the first call to `thr_getspecific` was 6,214 nanoseconds, and so on. Note the big jump in `__open` above: we spent over sixty microseconds (334,013 - 271,268 > 60,000) in that one function. What happened there? We went into the kernel of course. (Remember, we found `defopen` by aggregating on the user stack from the `open` system call.) We may wish to know _everything_ -- kernel _and_ user -- that happens from `defopen`. To do this, go back to the original `dhcp.d` and change this:
 
 ```
 pid43:::entry,

@@ -15,7 +15,7 @@ Wanting to get in on the fun, I've been playing around with it myself. To get a 
 
 ```
 
-The "`\-Xrundjvmti`" pulls in the JVMTI agent, and the "`:all`" following it denotes that I want to get DTrace probes for all possible events. (It defaults to less than all events to minimize probe effect.) Running with this agent creates a new provider in the JVM process called `djvm`. Listing its probes:
+The "`-Xrundjvmti`" pulls in the JVMTI agent, and the "`:all`" following it denotes that I want to get DTrace probes for all possible events. (It defaults to less than all events to minimize probe effect.) Running with this agent creates a new provider in the JVM process called `djvm`. Listing its probes:
 
 ```
 # dtrace -l -P 'djvm*'
@@ -307,7 +307,7 @@ Rectangle                                                                   175
 
 ```
 
-This means that we're seeing 175 `Rectangle` creations a second when I'm playing Tetris as fast as my [BattleTris](http://www.cs.brown.edu/people/mws/bt/bthome.html)\-hardened fingers can play. That doesn't seem so bad, but you can easily see how useful this is going to be on those pathological Java apps!
+This means that we're seeing 175 `Rectangle` creations a second when I'm playing Tetris as fast as my [BattleTris](http://www.cs.brown.edu/people/mws/bt/bthome.html)-hardened fingers can play. That doesn't seem so bad, but you can easily see how useful this is going to be on those pathological Java apps!
 
 Needless to say, the ability to peer into a Java app with DTrace is a very exciting development. To catch the fever, [download the JVMTI and JVMPI agents](https://solaris10-dtrace-vm-agents.dev.java.net/), head to your nearest [Solaris 10](http://www.sun.com/software/solaris/10/) machine (or [download Solaris 10](http://www.sun.com/software/solaris/get.jsp) if there isn't one), and have at it!
 
