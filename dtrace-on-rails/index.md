@@ -1,8 +1,6 @@
 ---
 title: "DTrace on Rails"
 date: "2006-05-01"
-categories: 
-  - "solaris"
 ---
 
 First I need to apologize for having been absent for so long -- I am very much heads-down on a new project. (The details of which will need to wait for another day, I'm afraid -- but suffice it to say that it, like just about everything else I've done at Sun, leverages much of what I've done before it.)
@@ -147,7 +145,7 @@ Top ten MySQL queries:
   SHOW FIELDS FROM products                                            | 5
 ```
 
-While this gives us lots of questions we might want to answer (e.g., "why the hell are we doing 340 stats on every 'effing request!"1), it might be a little easier to look at a view that lets us see requests and the database queries that they induce. Here, for example, is a similar script to do just that:
+While this gives us lots of questions we might want to answer (e.g., "why the hell are we doing 340 stats on every 'effing request!"[^1]), it might be a little easier to look at a view that lets us see requests and the database queries that they induce. Here, for example, is a similar script to do just that:
 
 ```
 #pragma D option quiet
@@ -229,16 +227,19 @@ Running the above while clicking around with the Depot app:
   7.956   <- "SELECT * FROM products WHERE (products.id = '7')  LIMIT 1"
   7.957   -> "SHOW FIELDS FROM products"
   7.957   <- "SHOW FIELDS FROM products"
-  7.971 <= /admin/edit/7  20.881 => /admin/update/7
+  7.971 <= /admin/edit/7
+ 20.881 => /admin/update/7
  20.952   -> "SELECT * FROM products WHERE (products.id = '7')  LIMIT 1"
  20.953   <- "SELECT * FROM products WHERE (products.id = '7')  LIMIT 1"
  20.953   -> "SHOW FIELDS FROM products"
  20.953   <- "SHOW FIELDS FROM products"  20.954   -> "BEGIN"
- 20.954   <- "BEGIN"  20.955   -> "UPDATE products SET `title` = 'foo bar', `price` = 1.2, ...
+ 20.954   <- "BEGIN"
+ 20.955   -> "UPDATE products SET `title` = 'foo bar', `price` = 1.2, ...
  20.955   <- "UPDATE products SET `title` = 'foo bar', `price` = 1.2, ...
  20.989   -> "COMMIT"
  20.989   <- "COMMIT"
- 21.001 <= /admin/update/7  21.005 => /admin/show/7
+ 21.001 <= /admin/update/7
+ 21.005 => /admin/show/7
  21.023   -> "SELECT * FROM products WHERE (products.id = '7')  LIMIT 1"
  21.023   <- "SELECT * FROM products WHERE (products.id = '7')  LIMIT 1"
  21.024   -> "SHOW FIELDS FROM products"
@@ -248,6 +249,4 @@ Running the above while clicking around with the Depot app:
 
 I'm no Rails developer, but it seems like this might be useful... If you want to check this out for yourself, start by getting [Rich's prototype provider](http://richlowe.net/~richlowe/patches/ruby-1.8.2-dtrace.diff). (Using it, you can do everything I've done here, just with higher disabled probe effect.) Meanwhile, I'll work with Rich to get the lower disabled probe effect version out shortly. Happy Railing!
 
-* * *
-
-1 Or if you're as savvy as the commenters on this blog entry, you might be saying to yourself, "why the hell is the 'effing development version running in production?!"
+[^1]: Or if you're as savvy as the commenters on this blog entry, you might be saying to yourself, "why the hell is the 'effing development version running in production?!"

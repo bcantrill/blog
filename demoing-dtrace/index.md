@@ -1,11 +1,9 @@
 ---
 title: "Demo’ing DTrace"
 date: "2004-08-05"
-categories: 
-  - "solaris"
 ---
 
-With my explanation of a [demo gone wrong](http://blogs.sun.com/roller/page/bmc/20040726#demo_perils), several people have asked me the more general question: how does one demo [DTrace](http://www.sun.com/bigadmin/content/dtrace)? This question doesn't have a single answer, especially given that DTrace is best demonstrated with _ad hoc_ queries of the system. Indeed, the best demos are when someone in the audience shouts out their own question that they want to see answered: answering such a question instantly with DTrace nearly always blows away the questioner -- who has presumably suffered in the past trying to answer similar questions. Of course, saying "why, there are many ways to demo to DTrace!" is a useless answer to the question of how one demos DTrace; while there are many ways that one _can_ demo DTrace, it's useful to get a flavor of how a typical demo might go. So with the substantial caveat that this is not _the_ way to demo DTrace, but merely _a_ way, let me walk you through an example demo.
+With my explanation of a [demo gone wrong](/2004/07/26/demo-perils), several people have asked me the more general question: how does one demo [DTrace](http://www.sun.com/bigadmin/content/dtrace)? This question doesn't have a single answer, especially given that DTrace is best demonstrated with _ad hoc_ queries of the system. Indeed, the best demos are when someone in the audience shouts out their own question that they want to see answered: answering such a question instantly with DTrace nearly always blows away the questioner -- who has presumably suffered in the past trying to answer similar questions. Of course, saying "why, there are many ways to demo to DTrace!" is a useless answer to the question of how one demos DTrace; while there are many ways that one _can_ demo DTrace, it's useful to get a flavor of how a typical demo might go. So with the substantial caveat that this is not _the_ way to demo DTrace, but merely _a_ way, let me walk you through an example demo.
 
 It all starts by running [dtrace](http://docs.sun.com/db/doc/816-5166/6mbb1kq0f?a=view)(1M) without any arguments:
 
@@ -382,7 +380,7 @@ Again, running the above for about ten seconds:
 
 ```
 
-This tells us that there were four calls to the `open` system call from `dhcpagent` -- and that all four were to the same file. Just on the face of it, this is suspicious: why is `dhcpagent` opening the file "`/etc/default/dhcpagent`" with such frequency? Hasn't whoever wrote this code ever heard of [`stat`](http://docs.sun.com/db/doc/816-5167/6mbb2jaj4?a=view)?1 To answer the former question, we're going to change our enabling to aggregate on `dhcpagent`'s stack backtrace when it performs an `open`. This is done with the [`ustack`](http://docs.sun.com/db/doc/817-6223/6mlkidlir?a=view) action. The new enabling:
+This tells us that there were four calls to the `open` system call from `dhcpagent` -- and that all four were to the same file. Just on the face of it, this is suspicious: why is `dhcpagent` opening the file "`/etc/default/dhcpagent`" with such frequency? Hasn't whoever wrote this code ever heard of [`stat`](http://docs.sun.com/db/doc/816-5167/6mbb2jaj4?a=view)?[^1] To answer the former question, we're going to change our enabling to aggregate on `dhcpagent`'s stack backtrace when it performs an `open`. This is done with the [`ustack`](http://docs.sun.com/db/doc/817-6223/6mlkidlir?a=view) action. The new enabling:
 
 ```
 # dtrace -n syscall::open:entry'/execname == "dhcpagent"/{@[ustack()] = count()}'
@@ -987,6 +985,4 @@ As the transition from `pid43` to `fbt` in the above indicates, this script show
 
 By this point in the demo, the audience is usually convinced that DTrace can instrument huge tracts of the system that were never before observable; the focus usually shifts from "can this do anything?" to "can this do anything for **me**?" The short answer is "yes" (of course), but a longer answer is merited. Unfortunately, this blog entry has already gone on long enough however; I'll save the longer answer for another day...
 
-* * *
-
-1 For whatever it's worth, a bug has been filed on this issue. Once it's fixed, I will sadly have to find some other sub-optimal software with which to demonstrate DTrace. The good news is that such software isn't terribly [hard to find](http://openoffice.org).
+[^1]: For whatever it's worth, a bug has been filed on this issue. Once it's fixed, I will sadly have to find some other sub-optimal software with which to demonstrate DTrace. The good news is that such software isn't terribly [hard to find](http://openoffice.org).
