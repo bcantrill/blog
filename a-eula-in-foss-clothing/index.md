@@ -1,6 +1,6 @@
 ---
 title: "A EULA in FOSS clothing?"
-date: "2018-12-17"
+date: "2018-12-16"
 ---
 
 There was a tremendous amount of reaction to and discussion about my [blog entry on the midlife crisis in open source](http://dtrace.org/blogs/bmc/2018/12/14/open-source-confronts-its-midlife-crisis/). As part of this discussion on HN, Jay Kreps of Confluent took the time to write a [detailed response](https://news.ycombinator.com/item?id=18687498#18689179) -- which he shortly thereafter elevated into [a blog entry](https://medium.com/@jaykreps/a-quick-comment-on-bryan-cantrills-blog-on-licensing-8dccee41d9e6).

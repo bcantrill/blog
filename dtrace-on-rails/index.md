@@ -1,6 +1,6 @@
 ---
 title: "DTrace on Rails"
-date: "2006-05-02"
+date: "2006-05-01"
 categories: 
   - "solaris"
 ---

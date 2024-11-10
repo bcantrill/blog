@@ -1,6 +1,6 @@
 ---
 title: "UNIX, circa 1984"
-date: "2004-11-25"
+date: "2004-11-24"
 ---
 
 I recently ran across [Xhomer](http://xhomer.isani.org/xhomer/), a simulator for the [DEC Pro 350](http://www.vintage-computer.com/dec_pro_350.shtml). While there are several [historic machine simulators](http://www.sosresearch.org/caale/caalesimulators.html#Historic) out there, Xhomer is polished: it compiled and ran on my Opteron laptop running Solaris 10 with no difficulties. But best of all, Xhomer includes system software: you can download a disk image of VENIX 2.0 -- a "real-time" UNIX variant from VenturCom. Here's a [screenshot of me logging in](images/welcome.png).

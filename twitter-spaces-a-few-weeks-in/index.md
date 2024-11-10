@@ -1,6 +1,6 @@
 ---
 title: "Twitter Spaces, a few weeks in"
-date: "2021-05-03"
+date: "2021-05-02"
 ---
 
 As a kid, I listened to a lot of talk radio. This was in the 80s, before the internet -- and before the AM dial became fringe. I have fond memories of falling asleep to the likes of [Bruce Williams](https://en.wikipedia.org/wiki/Bruce_Williams_(talk_radio_host)) who just gave damned good, level-headed advice. It was, at essence, both optimistic and temperate: a cool head to help people work through a tough spot.

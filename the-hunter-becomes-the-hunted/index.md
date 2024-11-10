@@ -1,6 +1,6 @@
 ---
 title: "The Hunter becomes the Hunted"
-date: "2009-01-22"
+date: "2009-01-21"
 categories: 
   - "fishworks"
 ---

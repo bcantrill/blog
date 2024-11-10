@@ -1,6 +1,6 @@
 ---
 title: "The relative performance of C and Rust"
-date: "2018-09-29"
+date: "2018-09-28"
 ---
 
 My blog post on [falling in love with Rust](http://dtrace.org/blogs/bmc/2018/09/18/falling-in-love-with-rust/) got quite a bit of attention -- with many being surprised by what had surprised me as well: the high performance of my naive Rust versus my (putatively less naive?) C. However, [others viewed it as irresponsible](https://www.reddit.com/r/rust/comments/9gzldv/bryan_cantrill_the_observation_deck_falling_in/e6a4ure/) to report these performance differences, believing that these results would be blown out of proportion or worse. The concern is not entirely misplaced: system benchmarking is one of those areas where -- in Jonathan Swift's words from three centuries ago -- "falsehood flies, and the truth comes limping after it."

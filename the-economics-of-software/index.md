@@ -1,6 +1,6 @@
 ---
 title: "The Economics of Software"
-date: "2004-08-29"
+date: "2004-08-28"
 ---
 
 Software is like nothing else in the history of human endeavor:[^1] unlike everything else we have ever built, software costs nothing to manufacture, and it never wears out. Yet these magical properties are arguably overshadowed by the ugly truth that software remains incredibly expensive to build. This gives rise to some strange economic properties: software's fixed costs are high (very high -- too high), but its variable costs are _zero_. As strange as they are, these economic properties aren't actually unique to software; they are also true (to varying degree) of the products that we have traditionally called "intellectual property." But unlike books or paintings or movies, software is predominantly an industrial good -- it is almost always used as a component in a larger, engineered system. When you take these together -- software's role as an industrial good, coupled with its high fixed costs and zero variable costs -- you get all sorts of strange economic phenomena. For example, doesn't it strike you as odd that your operating system is essentially [free](http://wwws.sun.com/software/solaris/solaris-express/sol_index.html), but your database is still costing you forty grand per CPU? Is a database infinitely more difficult to write than an operating system? (Answer: no.) If not, why the enormous pricing discrepancy?

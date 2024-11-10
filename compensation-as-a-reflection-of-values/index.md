@@ -1,6 +1,6 @@
 ---
 title: "Compensation as a reflection of values"
-date: "2021-03-05"
+date: "2021-03-04"
 ---
 
 Compensation: the word alone is enough to trigger a fight-or-flight reaction in many. But we in technology have the good fortune of being in a well-compensated domain, so why does this issue induce such anxiety when our basic needs are clearly covered? If it needs to be said, it's because compensation isn't merely about the currency we redeem in exchange for our labors, but rather it is a proxy for how we are _valued_ in a larger organization. This, in turn, brings us to our largest possible questions for ourselves, around things like meaning and self-worth.

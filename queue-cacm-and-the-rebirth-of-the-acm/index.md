@@ -1,6 +1,6 @@
 ---
 title: "Queue, CACM, and the rebirth of the ACM"
-date: "2009-05-15"
+date: "2009-05-14"
 categories: 
   - "fishworks"
 ---

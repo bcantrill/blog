@@ -1,6 +1,6 @@
 ---
 title: "agghist, aggzoom and aggpack"
-date: "2013-11-11"
+date: "2013-11-10"
 ---
 
 As I have often remarked, DTrace is a workhorse, not a show horse: the features that we have added to DTrace over the years come not from theoretical notions but rather from actual needs in production environments. This is as true now as it was [a decade ago](http://dtrace.org/blogs/bmc/2013/09/03/happy-10th-birthday-dtrace/), and even in core abstractions, extensive use of DTrace seems to give rise to new ways of thinking about them. In particular, [Brendan](http://dtrace.org/blogs/brendan) recently had a couple of feature ideas for aggregation processing that have turned out to be really interesting...

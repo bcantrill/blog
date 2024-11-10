@@ -1,6 +1,6 @@
 ---
 title: "Reflecting on The Soul of a New Machine"
-date: "2019-02-11"
+date: "2019-02-10"
 ---
 
 Long ago as an undergraduate, I found myself back home on a break from school, bored and with eyes wandering idly across a family bookshelf. At school, I had started to find a calling in computing systems, and now in the den, an old book suddenly caught my eye: Tracy Kidder's _The Soul of a New Machine_. Taking it off the shelf, the book grabbed me from its first descriptions of Tom West, captivating me with the epic tale of the development of the [Eagle at Data General](https://en.wikipedia.org/wiki/Data_General#32-bit_Project_Eagle_-_the_Eagle_project). I -- like so many before and after me -- found the book to be life changing: by telling the stories of the people behind the machine, the book showed the creative passion among engineers that might otherwise appear anodyne, inspiring me to chart a course that might one day allow me to make a similar mark.

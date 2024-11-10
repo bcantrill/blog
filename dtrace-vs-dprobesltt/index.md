@@ -1,6 +1,6 @@
 ---
 title: "DTrace vs. DProbes/LTT"
-date: "2004-07-18"
+date: "2004-07-17"
 categories: 
   - "solaris"
 ---

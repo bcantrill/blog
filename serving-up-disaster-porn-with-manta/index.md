@@ -1,6 +1,6 @@
 ---
 title: "Serving up disaster porn with Manta"
-date: "2013-07-24"
+date: "2013-07-23"
 ---
 
 Years ago, [Ben Fried](https://plus.google.com/108690239590381459413/about) liberated me by giving me the words to describe myself: I am a disaster porn addict. The sordid specifics of my addiction would surely shock the unafflicted: there are well-thumbed [NTSB final accident reports](http://www.ntsb.gov/doclib/reports/2001/AAR0101.pdf) hidden under my matress; I prowl the internet late at night for pictures of [dermoid cysts](http://24.media.tumblr.com/tumblr_m4b0u2AAqm1rwyutuo1_500.jpg); and I routinely binge on the vexed [Soviet missions to Mars](https://en.wikipedia.org/wiki/Phobos_1).

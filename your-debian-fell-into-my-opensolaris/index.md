@@ -1,6 +1,6 @@
 ---
 title: "Your Debian fell into my OpenSolaris!"
-date: "2005-11-08"
+date: "2005-11-07"
 categories: 
   - "solaris"
 ---

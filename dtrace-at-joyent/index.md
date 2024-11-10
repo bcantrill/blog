@@ -1,6 +1,6 @@
 ---
 title: "DTrace at Joyent"
-date: "2007-05-21"
+date: "2007-05-20"
 categories: 
   - "solaris"
 ---

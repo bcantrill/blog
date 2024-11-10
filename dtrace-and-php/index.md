@@ -1,6 +1,6 @@
 ---
 title: "DTrace and PHP"
-date: "2005-08-04"
+date: "2005-08-03"
 categories: 
   - "solaris"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Good-bye, Sun"
-date: "2010-07-26"
+date: "2010-07-25"
 categories: 
   - "fishworks"
   - "solaris"

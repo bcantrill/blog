@@ -1,6 +1,6 @@
 ---
 title: "Twitter, when the wall came down"
-date: "2022-11-06"
+date: "2022-11-05"
 ---
 
 I, like many people, have a complicated relationship with Twitter. As Adam and I regaled [in a recent Twitter Space](https://oxide-and-friends.transistor.fm/episodes/fail-whaling), it started when debugging the Twitter fail whale in the offices of Obvious in 2007, where I became thoroughly unimpressed with their self-important skipper, Jack Dorsey. In part because I thought he was such a fool, I refused to join Twitter out of principle.

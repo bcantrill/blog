@@ -1,6 +1,6 @@
 ---
 title: "2014 in review: Docker rising"
-date: "2015-01-03"
+date: "2015-01-02"
 ---
 
 When looking back on 2014 from an infrastructure perspective, it's hard not to have one word on the lips: Docker. (Or, as we are wont to do in Silicon Valley when a technology is particularly hot, have the same word on the lips three times over à la [Gabbo](http://simpsons.wikia.com/wiki/Gabbo): "Docker, Docker, DOCKER!") While Docker has existed since 2013, 2014 was indisputably the year in which it transcended from an interesting project to a transformative technology -- a shift which had profound ramifications for us at Joyent.

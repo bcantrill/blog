@@ -1,6 +1,6 @@
 ---
 title: "Catching disk latency in the act"
-date: "2009-01-01"
+date: "2008-12-31"
 categories: 
   - "fishworks"
 ---

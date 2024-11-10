@@ -1,6 +1,6 @@
 ---
 title: "Open source confronts its midlife crisis"
-date: "2018-12-15"
+date: "2018-12-14"
 ---
 
 Midlife is tough: the idealism of youth has faded, as has inevitably some of its fitness and vigor. At the same time, the responsibilities of adulthood have grown: the kids that were such a fresh adventure when they were infants and toddlers are now grappling with their own transition into adulthood -- and you try to remind yourself that the kids that you have sacrificed so much for probably don't _actually_ hate your guts, regardless of that post they just liked on the 'gram. Making things more challenging, while you are navigating the turbulence of teenagers, your own parents are likely entering life's twilight, needing help in new ways from their adult children. By midlife, in addition to the singular joys of life, you have also likely experienced its terrible sorrows: death, heartbreak, betrayal. Taken together, the fading of youth, the growth in responsibility and the endurance of misfortune can lead to cynicism or (worse) drastic and poorly thought-out choices. Add in a little fear of mortality and some existential dread, and you have the stuff of which midlife crises are made...

@@ -1,6 +1,6 @@
 ---
 title: "SmartDataCenter and the merits of being opinionated"
-date: "2015-02-06"
+date: "2015-02-05"
 ---
 
 Recently, Randy Bias of EMC (formerly of CloudScaling) wrote an excellent piece on [Why "Vanilla OpenStack" doesn't exist and never will](http://www.cloudscaling.com/blog/openstack/vanilla-openstack-doesnt-exist-and-never-will/). If you haven't read it and you are anywhere near a private cloud effort, you should consider it a must-read: Randy debunks the myth of a vanilla OpenStack in great detail. And it apparently does need debunking; as Randy outlines, those who are deploying an on-premises cloud expect:

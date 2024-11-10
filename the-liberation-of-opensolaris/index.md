@@ -1,6 +1,6 @@
 ---
 title: "The liberation of OpenSolaris"
-date: "2010-08-20"
+date: "2010-08-19"
 ---
 
 As many have seen, [Oracle has elected to stop contributing to OpenSolaris](http://sstallion.blogspot.com/2010/08/opensolaris-is-dead.html). This decision is, to put it bluntly, stupid. Indeed, I would ([and did](http://twitter.com/bcantrill/status/21185613615)) liken it to [L. Paul Bremer](http://en.wikipedia.org/wiki/L._Paul_Bremer)'s decision to disband the Iraqi military after the fall of Saddam Hussein: beyond merely a foolish decision borne out of a distorted worldview, it has created combatants unnecessarily. As with Bremer's infamous decision, the bitter irony is that the new combatants were formerly the strongest potential allies -- and in Oracle's case, it is the community itself.

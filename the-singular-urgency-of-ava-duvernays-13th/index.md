@@ -1,6 +1,6 @@
 ---
 title: "The singular urgency of Ava DuVernay’s 13th"
-date: "2020-06-03"
+date: "2020-06-02"
 ---
 
 On Sunday afternoon, I was on the phone with one of my Oxide co-founders, [Steve Tuck](https://twitter.com/sdtuck). He and I were both trying to grapple with the brazen state-sponsored violence that we were witnessing: the murder of George Floyd and the widespread, brutal, and shameless suppression of those who were demonstrating against it.

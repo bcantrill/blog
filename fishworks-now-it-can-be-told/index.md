@@ -1,6 +1,6 @@
 ---
 title: "Fishworks: Now it can be told"
-date: "2008-11-10"
+date: "2008-11-09"
 categories: 
   - "fishworks"
 ---

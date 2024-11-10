@@ -1,6 +1,6 @@
 ---
 title: "The de-commoditization of the OS"
-date: "2004-06-29"
+date: "2004-06-28"
 categories: 
   - "solaris"
 ---

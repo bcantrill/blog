@@ -1,6 +1,6 @@
 ---
 title: "DTrace for Linux"
-date: "2005-12-14"
+date: "2005-12-13"
 categories: 
   - "solaris"
 ---

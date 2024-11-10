@@ -1,6 +1,6 @@
 ---
 title: "When magic collides"
-date: "2011-03-10"
+date: "2011-03-09"
 ---
 
 We had an interesting issue come up the other day, one that ended up being a pretty nasty bug in DTrace. It merits a detailed explanation, but first, a cautionary note: we're headed into rough country; in [the immortal words of Sixth Edition](http://www.catb.org/jargon/html/Y/You-are-not-expected-to-understand-this.html), you are not expected to understand this.

@@ -1,6 +1,6 @@
 ---
 title: "DTrace on Mac OS X!"
-date: "2006-08-08"
+date: "2006-08-07"
 categories: 
   - "solaris"
 ---

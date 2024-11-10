@@ -1,6 +1,6 @@
 ---
 title: "Eulogy for a benchmark"
-date: "2009-02-02"
+date: "2009-02-01"
 categories: 
   - "fishworks"
 ---
