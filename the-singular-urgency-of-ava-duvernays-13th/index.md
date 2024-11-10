@@ -1,5 +1,5 @@
 ---
-title: "The singular urgency of Ava DuVernay&#039;s 13th"
+title: "The singular urgency of Ava DuVernay’s 13th"
 date: "2020-06-03"
 ---
 

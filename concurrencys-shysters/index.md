@@ -1,5 +1,5 @@
 ---
-title: "Concurrency&#039;s Shysters"
+title: "Concurrency’s Shysters"
 date: "2008-11-03"
 categories: 
   - "solaris"

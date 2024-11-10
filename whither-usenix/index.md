@@ -1,8 +1,6 @@
 ---
 title: "Whither USENIX?"
 date: "2004-07-06"
-categories: 
-  - "solaris"
 ---
 
 As [I mentioned earlier](http://dtrace.org/blogs/bmc/2004/07/03/beating-the-odds/), I recently returned from [USENIX '04](http://www.usenix.org/events/usenix04/), where we presented the [DTrace paper](http://www.sun.com/bigadmin/content/dtrace/dtrace_usenix.pdf). It was a little shocking to me that our paper was the **only** paper to come exclusively from industry: most papers had no industry connection whatsoever, and the papers that had any authors from industry were typically primarily written by PhD students interning at industry labs. The content of the General Session was thus academic in the strictest sense: it consisted of papers written by graduate students, solving problems in systems sufficiently small to be solvable by a single graduate student working for a reasonably short period of time. The problem is that many of these systems -- to me at least -- are so small as to not be terribly relevant. This is important because relevance is sufficiently vital to USENIX to be embodied in the [Mission Statement](http://www.usenix.org/about/): USENIX "supports and disseminates research with a practical bias." And of course, there is a more pragmatic reason to seek relevance in the General Session: most of the attendees are from industry, and most of them are paying full-freight. Given that relevance is so critical to USENIX, I was a little surprised that -- unlike most industry conferences I have attended -- there was no way to provide feedback on the General Session. How does the Steering Committee know if the research has a "practical bias" if they don't ask the question?
@@ -40,12 +38,12 @@ Note that there's some work exclusively by industry, and some work done in conju
 - M. NUTI - Industrial Consultant
 - P. COLOMBO - [Dell'Orto](http://www.dellorto.it/)
 - C. DOVERI - [EDI Progetti e Sviluppo](http://www.ediprogetti.it/main.htm)
-- G. FORASASSI - [Universit&#224 di Pisa](http://www.unipi.it/)
-- R. GENTILI - [Universit&#224 di Pisa](http://www.unipi.it/)
+- G. FORASASSI - [Università di Pisa](http://www.unipi.it/)
+- R. GENTILI - [Università di Pisa](http://www.unipi.it/)
 - G. LASSANSKE - Chair North American Technical Committee
 - G. LEVIZZARI - [ATA](http://www.ata.it)
 - M. MARCACCI - [Piaggio](http://www.piaggiousa.com/)
-- L. MARTORANO - [Universit&#224 di Pisa](http://www.unipi.it/)
+- L. MARTORANO - [Università di Pisa](http://www.unipi.it/)
 - L. PETRINI - [Aprilia](http://www.apriliausa.com/portale/eng/home.phtml)
 - R. RINOLFI - [Centro Ricerche Fiat](http://www.crf.it/uk/home.htm)
 

@@ -1,5 +1,5 @@
 ---
-title: "A physician&#039;s son"
+title: "A physician’s son"
 date: "2010-09-24"
 ---
 

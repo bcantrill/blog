@@ -1,5 +1,5 @@
 ---
-title: "BOF&#039;d at USENIX"
+title: "BOF’d at USENIX"
 date: "2004-06-30"
 categories: 
   - "solaris"

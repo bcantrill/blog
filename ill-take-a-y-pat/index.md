@@ -1,5 +1,5 @@
 ---
-title: "I&#039;ll take a &quot;y&quot;, Pat..."
+title: "I’ll take a “y”, Pat..."
 date: "2004-06-16"
 categories: 
   - "solaris"

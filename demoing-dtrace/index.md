@@ -1,5 +1,5 @@
 ---
-title: "Demo&#039;ing DTrace"
+title: "Demo’ing DTrace"
 date: "2004-08-05"
 categories: 
   - "solaris"
