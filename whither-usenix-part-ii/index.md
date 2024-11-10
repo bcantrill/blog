@@ -1,8 +1,6 @@
 ---
 title: "Whither USENIX? (Part II)"
 date: "2004-07-08"
-categories: 
-  - "solaris"
 ---
 
 [Werner Vogels](http://www.cs.cornell.edu/vogels/default.htm), a member of the [USENIX '04 Program Committee](http://www.usenix.org/events/usenix04/organizers.html), has written [very thoughtful responses](http://www.allthingsdistributed.com/historical/archives/000482.html) to some of [my observations](http://dtrace.org/blogs/bmc/2004/07/06/whither-usenix/). And it's clear that Werner and I see the same problem: there is insufficient industrial/academic cooperation in computer science systems research -- and the lack of cooperation is to the detriment of both groups.
@@ -13,7 +11,7 @@ Examining these three years of USENIX brings up an interesting question: what ha
 
 The results are perhaps well-known, but they were shocking to me:
 
-![](http://dtrace.org/resources/bmc/hist.png)
+![](images/hist.png)
 
 To me, this trend should be deeply disconcerting: an organization that has dedicated itself to research with a "practical bias" is clearly losing that bias in its flagship conference.
 

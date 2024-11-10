@@ -25,7 +25,7 @@ Could the performance difference that we're seeing simply be Rust's data structu
 
 The results were pretty interesting:
 
-![](http://dtrace.org/resources/bmc/statemap-perf.png)
+![](images/statemap-perf.png)
 
 A couple of things to note here: first, there are 3.5M state transitions in the input data; as soon as the number of rectangles exceeds the number of states, there is no reason for any coalescing, and some operations (namely, deleting from the tree of rectangles) go away entirely. So that explains the flatline at roughly 3.5M rectangles.
 
@@ -33,7 +33,7 @@ Also not surprisingly, the worst performance for both approaches occurs when the
 
 So far, this seems consistent with the BTreeSet simply being a more efficient data structure. But what is up with that lumpy Rust performance?! In particular there are some strange spikes; e.g., zooming in on the rectangle range up to 100,000 rectangles:
 
-![](http://dtrace.org/resources/bmc/statemap-perf-lumpy-wat.png)
+![](images/statemap-perf-lumpy-wat.png)
 
 Just from eyeballing it, they seem to appear at roughly logarithmic frequency with respect to the number of rectangles. My first thought was perhaps some strange interference relationship with respect to the B-tree and the cache size or stride, but this is definitely a domain where an ounce of data is worth much more than a pound of hypotheses!
 
@@ -136,11 +136,11 @@ index a44dc73..5b7073d 100644
 
 That's it: because the two (by convention) have the same interface, there is nothing else that needs to be done! And the results, with the new implementation in light blue:
 
-![](http://dtrace.org/resources/bmc/statemap-perf-hashmap.png)
+![](images/statemap-perf-hashmap.png)
 
 Our lumps are gone! In general, the BTreeMap-based implementation performs a little worse than the HashMap-based implementation, but without as much variance. Which isn't to say that this is devoid of strange artifacts! It's especially interesting to look at the variation at lower levels of rectangles, when the two implementations seem to alternate in the pole position:
 
-![](http://dtrace.org/resources/bmc/statemap-perf-watwat.png)
+![](images/statemap-perf-watwat.png)
 
 I don't know what happens to the BTreeMap-based implementation at about ~2,350 rectangles (where it degrades by nearly 10% but then recovers when the number of rectangles hits ~2,700 or so), but at this point, the effects are only academic for my purposes: for statemaps, the default number of rectangles is 25,000. That said, I'm sure that digging there would yield interesting discoveries!
 
@@ -156,6 +156,6 @@ All of this adds up to the existential win of Rust: **powerful abstractions with
 
 **Update:** Several have asked if Clang would result in materially better performance; my apologies for not having mentioned that when I did [my initial analysis](https://github.com/joyent/statemap/issues/42), I had included Clang and knew that (at the default rectangles of 25,000), it improved things a little but not enough to approach the performance of the Rust implementation. But for completeness sake, I cranked the Clang-compiled binary at the same rectangle points:
 
-![](http://dtrace.org/resources/bmc/statemap-perf-clang.png)
+![](images/statemap-perf-clang.png)
 
 Despite its improvement over GCC, I don't think that the Clang results invalidate any of my analysis -- but apologies again for not including them in the original post!
