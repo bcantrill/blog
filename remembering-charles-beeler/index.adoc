@@ -1,0 +1,70 @@
+---
+title: "Remembering Charles Beeler"
+date: "2024-11-12"
+---
+
+= Remembering Charles Beeler
+
+_Note: This was co-authored with Steve Tuck, and originally appeared
+https://oxide.computer/blog/remembering-charles-beeler[on the Oxide blog]._
+
+We are heartbroken to relay that Charles Beeler, a friend and early investor
+in Oxide, https://www.rallyventures.com/in-memoriam-charles-beeler/[passed
+away in September after a battle with cancer].  We lost Charles far too soon;
+he had a tremendous influence on the careers of us both.
+
+Our relationship with Charles dates back nearly two decades, to his
+involvement with the ACM Queue board where he met Bryan.  It was unprecedented
+to have a venture capitalist serve in this capacity with ACM, and Charles
+brought an entirely different perspective on the practitioner content.  A
+computer science pioneer who also served on the board took Bryan aside at one
+point:  "Charles is one of the good ones, you know."
+
+When Bryan joined Joyent a few years later, Charles also got to know Steve
+well.  Seeing the promise in both node.js and cloud computing, Charles became
+an investor in the company.  When companies hit challenging times, some
+investors will hide -- but Charles was the kind of investor to figure out how
+to fix what was broken.  When Joyent needed a change in executive leadership,
+it was Charles who not only had the tough conversations, but led the search
+for the leader the company needed, ultimately positioning the company for
+success.
+
+Aside from his investment in Joyent, Charles was an outspoken proponent of
+node.js, becoming an organizer of the Node Summit conference.  In 2017, he
+asked Bryan to deliver the conference's keynote, but by then, the relationship
+between Joyent and node.js had become... complicated, and Bryan felt that it
+probably wouldn't be a good idea.  Any rational person would have dropped it,
+but Charles persisted, with characteristic zeal:  if the Joyent relationship
+with node.js had become strained, so much more the reason to speak candidly
+about it!  Charles prevailed, and the resulting talk,
+https://www.youtube.com/watch?v=Xhx970_JKX4[Platform as Reflection of Values],
+became one of Bryan's most personally meaningful talks.
+
+Charles's persistence was emblematic:  he worked behind the scenes to
+encourage people to do their best work, always with an enthusiasm for the
+innovators and the creators.  As we were contemplating Oxide, we told Charles
+what we wanted to do long before we had a company.  Charles laughed with
+delight: "I hoped that you two would do something big, and I am just so happy
+for you that you're doing something so ambitious!"
+
+As we raised seed capital, we knew that we were likely a poor fit for Charles
+and his fund.  But we also knew that we deeply appreciated his wisdom and
+enthusiasm; we couldn't resist pitching him on Oxide.  Charles approached the
+investment in Oxide as he did with so many other aspects:  with curiosity,
+diligence, empathy, and candor.  He was direct with us that despite his
+enthusiasm for us personally, Oxide would be a challenging investment for his
+firm.  But he also worked with us to address specific objections, and
+ultimately he won over his partnership.  We were thrilled when he not only
+invested, but pulled together a syndicate of like-minded technologists and
+entrepreneurs to join him.
+
+Ever since, he has been a huge Oxide fan.  Befitting his enthusiasm, one of
+his final posts expressed his enthusiasm and pride in what the Oxide team has
+built.
+
+Charles, thank you.  You told us you were proud of us -- and it meant the
+world.  We are gutted to no longer have you with us; your influence lives on
+not just in Oxide, but also in the many people that you have inspired.  You
+were the best of venture capital.  Closer to the heart, you were a terrific
+friend to us both; thank you.
+

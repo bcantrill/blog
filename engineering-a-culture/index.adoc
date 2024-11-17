@@ -1,0 +1,120 @@
+---
+title: "Engineering a culture"
+date: "2024-03-31"
+---
+
+= Engineering a culture
+
+We ran into an interesting issue recently.  On the one hand, it was routine:
+we had a bug -- a regression -- and the team quickly jumped on it, getting
+it root caused and fixed.  But on the other, this particular issue
+was something of an Oxide object lesson, representative not just of the 
+technologies but also of the 
+culture we have built here.  I wasn't the only person who thought so,
+and two of my colleagues wrote terrific blog entries with their perspectives:
+
+* Matt Keeter with https://www.mattkeeter.com/blog/2024-03-25-packing/[It's Free Real Estate]
+* Cliff Biffle with https://cliffle.com/blog/who-killed-the-network-switch/[Who killed the network switch?  A Hubris Bug Story]
+
+The initial work as described by Matt represents a creative solution to
+a thorny problem; if it's clear in hindsight, it certainly wasn't at the time!
+(In Matt's evocative words: "One morning, I had a revelation.") I first learned of
+Matt's work when he demonstrated it during our weekly
+https://www.youtube.com/watch?v=7RR6hFE_jDU#t=6[Demo Friday], 
+an hour-long unstructured session to demo our work for one another.  Demo
+Friday is such an essential part of Oxide's culture that it feels like we have
+always done it, but in fact it took us nearly two years into the company's
+life to get there: over the spring and summer of 2021, our colleague Sean
+Klein had instituted regular demos for the area that he works on (the 
+https://github.com/oxidecomputer/omicron[Oxide control plane]),
+and others around the company -- seeing the energy that came from it -- asked
+if they, too, could start regular demos for their domain.  But instead of
+doing it group by group, we instituted it company-wide starting in the fall of
+2021: an unstructured hour once a week in which anyone can demo
+anything.  
+
+In the years since, we have had demos of all scopes and sizes.  Importantly,
+no demo is too small -- and we have often found that a demo that feels small
+to someone in the thick of work will feel extraordinary to someone outside of
+it.  ("I have a small demo building on the work of a lot of other people" has
+been heard so frequently that it has become something of an inside joke.) Demo
+Friday is important because it gets to one of our most important drivers as
+technologists:  **the esteem of our peers**.  The thrill that you get from showing
+work to your colleagues is unparalleled -- and their wonderment in return is
+uniquely inspiring.  (Speaking personally, Matt's demo addressed a problem
+that I had personally had many times over in working on Hubris -- and I was one
+of the many https://en.wikipedia.org/wiki/W00t[w00ts in the chat], excited to see his
+creative solution!)
+
+Having the demos be company-wide has also been a huge win
+for not just our shared empathy and teamwork but also our curiosity and
+versatility:  it's really inspiring to have (say) one colleague show how they
+used 
+https://www.protoexpress.com/blog/back-drilling-pcb-design-and-manufacturing/[PCB
+backdrilling] for signal integrity, and the next show an integration they
+built using
+https://github.com/oxidecomputer/dropshot[Dropshot]
+between our CRM and spinning up a demonstration environment for a customer.
+And this is more than just idle intellectual curiosity:  our stack is deep -- spanning
+both hardware and software -- and the demos make for a fun and engaging way to learn
+about aspects of the system that we don't normally work on.
+
+Returning to Matt and Cliff, if
+https://www.mattkeeter.com/blog/2024-03-25-packing/[Matt's work]
+implicitly hits on aspects of our culture, 
+https://cliffle.com/blog/who-killed-the-network-switch/[Cliff's story of debugging] addresses that culture
+explicitly, noting that the experience demonstrated:
+
+____
+*Tight nonhierarchical integration of the team.* This isn’t a Hubris feature, but it’s hard to separate Hubris from the team that built it. Oxide’s engineering team has essentially no internal silos. Our culture rewards openness, curiosity, and communication, and discourages defensiveness, empire-building, and gatekeeping. We’ve worked hard to create and defend this culture, and I think it shows in the way we organized horizontally, across the borders of what other organizations would call teams, to solve this mystery.
+____
+
+In
+https://news.ycombinator.com/item?id=39813365[the discussion on Hacker News of Cliff's piece],
+this cultural observeration stood out, with
+https://news.ycombinator.com/item?id=39837073[a commenter asking]:
+
+____
+I'd love to hear more about the motivations for crafting such a culture as
+well as some particular implementation details. I'm curious if there are
+drawbacks to fostering "openness, curiosity, and communication" within an
+organization? 
+____
+
+The culture at Oxide is in fact very deliberate:  when starting a company,
+one is building many things at once (the team, the product, the organization,
+the brand) -- and the culture will both inform and be reinforced by all of
+these.
+Setting that first cultural cornerstone was very important to us --
+starting with 
+https://oxide.computer/principles[our mission, principles,
+and values].
+Critically, by using our mission, principles, and values as the foundation for
+https://rfd.shared.oxide.computer/rfd/0003[our hiring process],
+we have deliberately created a culture that reinforces itself.
+
+Some of the implementation details:
+
+* We have https://oxide.computer/blog/compensation-as-a-reflection-of-values[uniform compensation] (even if it might not scale indefinitely)
+* We are https://rfd.shared.oxide.computer/[writing intensive] (but we still believe in spoken collaboration)
+* We have no formalized performance review process (but we believe in feedback)
+* We record every meeting (but not every conversation)
+* We have a remote work force (but we also have an office)
+* We are non-hierarchical (but we all ultimately report to our CEO)
+* We don't use engineering metrics (but we all measure ourselves by our
+  customers and their success)
+
+If it needs to be said, there is plenty of **ambiguity**: if you are using
+absolutes to think of Oxide (outside of our principles of honesty, integrity
+and decency!) you are probably missing some nuance of our culture.
+
+Finally, to the (seemingly loaded?) question of the "drawbacks" of fostering
+"openness, curiosity, and communication" within an organization, the only
+drawback is that it's hard work: culture has to be deliberate without being
+overly prescriptive, and that can be a tricky balance.  In this regard,
+building a culture is very different than building (say) software:  it is not
+engineered in a traditional sense, but is rather a gooey, squishy, organism
+that will evolve over time.  But the reward of the effort is something that its
+participants care intensely about: it will continue to be (in Cliff's words) a
+culture that we work hard to not just create but defend!
+
