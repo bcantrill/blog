@@ -1,11 +1,9 @@
 ---
 title: "On Dreaming in Code"
 date: "2007-11-11"
-categories: 
-  - "solaris"
 ---
 
-As [I noted previously](http://dtrace.org/blogs/bmc/dtrace_at_google), I recently gave a Tech Talk at Google on DTrace. When I gave the talk, I was in the middle of reading Scott Rosenberg's _Dreaming in Code_, and (for whatever poorly thought-out reason) I elected to use my dissatisfaction with the book as an entree into DTrace. I think that my thinking here was to use what I view to be Rosenberg's limited understanding of software as a segue into the more general difficulty of understanding running software -- with that of course being the problem that DTrace was designed to solve.
+As [I noted previously]({{< relref "posts/dtrace-at-google" >}}), I recently gave a Tech Talk at Google on DTrace. When I gave the talk, I was in the middle of reading Scott Rosenberg's _Dreaming in Code_, and (for whatever poorly thought-out reason) I elected to use my dissatisfaction with the book as an entree into DTrace. I think that my thinking here was to use what I view to be Rosenberg's limited understanding of software as a segue into the more general difficulty of understanding running software -- with that of course being the problem that DTrace was designed to solve.
 
 However tortured that path of reasoning may sound now, it was much worse in the actual presentation -- and in terms of _Dreaming in Code_, my introduction comes across as a kind of gangland slaying of Rosenberg's work. When I saw the video, I just cringed, noted with relief that at least the butchery was finished by five minutes in, and hoped that viewers would remember the meat of the presentation rather than the sloppy hors d'oeuvres.
 

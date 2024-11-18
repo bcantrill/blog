@@ -1,5 +1,5 @@
 ---
-title: "Triton: Docker and the &quot;best of all worlds&quot;"
+title: "Triton: Docker and the “best of all worlds”"
 date: "2015-03-24"
 ---
 
