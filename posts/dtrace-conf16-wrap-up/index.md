@@ -1,5 +1,6 @@
 ---
 title: "dtrace.conf(16) wrap-up"
+slug: "dtrace-conf16-wrap-up"
 date: "2016-07-29"
 ---
 
