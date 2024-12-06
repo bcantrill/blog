@@ -1,0 +1,164 @@
+---
+title: "dtrace.conf(24)"
+date: "2024-12-05"
+---
+
+Sometime in late 2007, we had the idea of a DTrace conference. 
+Or really, more of a meetup; from the primordial e-mail I sent:
+
+____
+The goal here, by the way, is not a DTrace user group, but more of a
+face-to-face meeting with people actively involved in DTrace -- either by
+porting it to another system, by integrating probes into higher level
+environments, by building higher-level tools on top of DTrace or by using it
+heavily and/or in a critical role.  That said, we also don't want to be
+exclusionary, so our thinking is that the only true requirement for attending
+is that everyone must be prepared to speak informally for 15 mins or so on
+what they are doing with DTrace, any limitations that they have encountered,
+and some ideas for the future.  We're thinking that this is going to be on
+the order of 15-30 people (though more would be a good problem to have --
+we'll track it if necessary), that it will be one full day (breakfast in the
+morning through drinks into the evening), and that we're going to host it
+here at our offices in San Francisco sometime in March 2008.  
+____
+
+This same note also included some suggested names for the gathering,
+including what in hindsight seems a clear winner:
+link:images/bi-mon-sci-fi-con.gif[DTrace Bi-Mon-Sci-Fi-Con].
+As if knowing that I should leave an explanatory note to my future self as to
+why this name was not selected, my past self 
+fortunately clarified:
+"before everyone clamors for the obvious Bi-Mon-Sci-Fi-Con, you should know
+that most Millennials don't (sadly) get the reference."  (While I disagree
+with the judgement of my past self, it at least indicates that at some
+point I cared if anyone got the reference.)
+
+We settled on a https://illumos.org/books/dtrace/chp-anon.html#chp-anon[much more obscure reference],
+and had https://bcantrill.dtrace.org/2008/03/16/dtrace.conf08/[the first dtrace.conf in March 2008].
+Befitting the style of the time, it was an https://en.wikipedia.org/wiki/Unconference[unconference] (a term that may well have hit its apogee in 2008) that
+you signed up to attend by
+link:images/wiki.jpg[editing a wiki].
+More surprising given the year (and thanks entirely to attendee Ben Rockwood),
+it was recorded --
+though this is so long ago that 
+https://www.youtube.com/watch?v=FZ4Z22AGj5s#t=38s[I referred to it as video taping]
+(and with none of the participants mic'd, I'm afraid the quality isn't very good).
+The conference, however, was terrific, viz. the reports of 
+https://ahl.dtrace.org/2008/05/05/dtrace-conf-post-post-mortem/[Adam],
+https://x86vmm.blogspot.com/2008/03/dtraceconf08.html[Keith] and
+https://redmonk.com/sogrady/2008/03/16/dtraceconf-and-the-dumbest-guy-in-the-room/[Stephen] (all somehow still online nearly two decades later).
+If anything, it was a little _too_ good:
+https://www.youtube.com/watch?v=2PU0WkMJNGU#t=4m0s[we realized that we couldn't recreate the magic], and we
+demurred on making it an annual event.
+
+Years passed, and memories faded.  By 2012, it felt like we wanted to get
+folks together again, now under a post-lawnmower corporate aegis in Joyent.
+The resulting
+https://ahl.dtrace.org/2012/04/09/dtrace-conf12-wrap-up/[dtrace.conf(12)] was
+a success, and
+the Olympiad cadence felt like the right one; we did it again four years
+later at
+https://bcantrill.dtrace.org/2016/07/29/dtrace-conf16-wrap-up/[dtrace.conf(16)].
+
+In 2020, we came back together for
+https://bcantrill.dtrace.org/2019/12/02/the-soul-of-a-new-computer-company/[a
+new adventure] -- and the DTrace Olympiad was
+https://www.youtube.com/watch?v=IeUFzBBRilM#t=1h30m36s[not lost on Adam].
+Alas, dtrace.conf(20) -- like the Olympics themselves -- was cancelled, if
+implicitly.
+Unlike the Olympics, however, it was not to be rescheduled.
+
+More years passed and DTrace continued to prove its utility at Oxide;
+last year when Adam and I did our 
+https://oxide-and-friends.transistor.fm/episodes/dtrace-at-20["DTrace at 20" episode of
+_Oxide and Friends_],
+we vowed to hold dtrace.conf(24) -- and a few months ago, we set our date to be December 11th.
+
+At first we assumed we would do something similar to our earlier conferences:
+a one-day participant-run conference, at the Oxide office in Emeryville.
+But times have changed: thanks to 
+https://oxide-and-friends.transistor.fm/episodes/the-future-of-work-2022-03-07[the
+rise of remote work], technologists are
+much more dispersed -- and many more people would need to travel for
+dtrace.conf(24) than in previous DTrace Olympiads.
+Travel hasn't become any cheaper since 2008, and the cost (and inconvenience) was 
+clearly going to limit attendance.
+
+The dilemma for our small meetup
+ highlights the
+changing dynamics in tech conferences in general: with talks all recorded and made
+publicly available after the conference, how does one justify attending
+a conference in person?
+There can be reasonable answers to that question, of course:  it may be the hallway
+track, or the expo hall, or the after-hours socializing, or perhaps some
+other
+https://www.youtube.com/watch?v=oHeqakyWQT0[special conference experience].
+But it's also not surprising that some conferences -- especially ones
+really focused on technical content -- have decided that they are better
+off doing as 
+https://www.oreilly.com/conferences/[conference giant O'Reilly Media did], and
+going exclusively online.
+And without the need to feed and shelter participants, the
+logistics for running a conference become much more tenable -- and the
+price point can be lowered to the point that even highly produced
+conferences like 
+https://www.p99conf.io/[P99 CONF] 
+can be made freely available.
+This, in turn, leads to much greater attendance -- and a network effect that
+can get back some of what one might lose going online.  In particular, 
+using chat as the hallway track can be more much effective (and is
+certainly more scalable!) than the *actual* physical hallways at a conference.
+
+For conferences in general, there is a conversation to be had here
+(and as a teaser,
+Adam and I are going to
+https://discord.gg/QrcKGTTPrF?event=1313157996645322784[talk about it with
+Stephen O'Grady and Theo Schlossnagle on _Oxide and Friends_ next week], but
+for our quirky, one-day, Olympiad-cadence dtrace.conf, the decision was
+pretty easy:  there was much more to be gained than lost by going 
+exclusively on-line.
+
+So dtrace.conf(24) is coming up next week, and
+https://www.eventbrite.com/e/dtraceconf24-tickets-1044402936297?aff=oddtdtcreator[it's available to everyone].
+In terms of platform, we're going to try to keep that pretty simple:
+we're going to use Google Meet for the actual presenters, which we will
+stream in real-time to YouTube -- and we'll use
+https://discord.gg/QrcKGTTPrF?event=1313617352541208747[the Oxide Discord]
+for all chat.
+We're hoping you'll join us on December 11th -- and if you want to talk
+about DTrace or a DTrace-adjacent topic, we'd love for you to present!
+Keeping to the
+unconference style, if you would like to present, please indicate your
+topic in
+https://discord.gg/tTECbxDf88[the #session-topics Discord channel] so
+we can get the agenda fleshed out.
+
+While we're excited to be online, there *are* some historical
+accoutrements of conferences
+that we didn't want to give up.
+First, we have a tradition of t-shirts with dtrace.conf.
+Thanks to our designer
+https://bsky.app/profile/benleonard.bsky.social[Ben Leonard], we have
+link:images/dtrace-conf24-shirt.png[a banger of a t-shirt],
+capturing the spirit of our original dtrace.conf(08) shirt but
+with an Oxide twist.
+It's (obviously) harder to make those free but we have tried to
+price them reasonably.  You can get your t-shirt by adding it to your
+(free) 
+https://www.eventbrite.com/e/dtraceconf24-tickets-1044402936297?aff=oddtdtcreator[dtrace.conf ticket].
+(And for those who present at dtrace.conf, your shirt is on us -- we'll send
+you a coupon code!)
+
+Second, for those who can make their way to the East Bay and
+want some hangout time, we are
+going to have an après conference social event at the Oxide office starting
+at 5p.  We're charging something nominal for that too
+(and like the t-shirt, you pay for that via your
+https://www.eventbrite.com/e/dtraceconf24-tickets-1044402936297?aff=oddtdtcreator[dtrace.conf ticket]);
+we'll have
+some food and drinks and an Oxide hardware tour for the curious -- and
+(of course?) there will be https://github.com/fishpong/docs/wiki/Primer[Fishpong].
+
+Much has changed since I sent that e-mail 17 years ago -- but the shared
+values and disposition that brought together our small community continue
+to endure; we look forward to seeing everyone (virtually) at dtrace.conf(24)!
