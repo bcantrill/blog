@@ -133,7 +133,7 @@ https://www.inc.com/jason-aten/intels-ad-campaign-against-apple-is-perfect-examp
 https://www.youtube.com/playlist?list=PLk2sjg_-F-MfQL0aUbKyDX909ZfKCUq1c[deleted the Go PC ads], but then 
 https://www.youtube.com/@IntelCanada/search?query=gopc[forgot about Canada].)  Fortunately for future historians of corporate dreck, the cringiest of these ads was
 immortalized when 
-https://www.youtube.com/watch?v=HbkdpyUlJNs[Marquis Brownlee and David Imel absolutely ripped it apart].  "Go PC" was an embodiment of the arrogance
+https://www.youtube.com/watch?v=HbkdpyUlJNs[Marques Brownlee and David Imel absolutely ripped it apart].  "Go PC" was an embodiment of the arrogance
 that I feared came from the top; how could *anyone* think that Intel's biggest problem in 2021 was competing against... the Mac?!  They knew that AMD
 also made x86 parts, right?!  The whole campaign frankly felt juvenile, as if they were trying to just deride Apple for their decision to 
 https://en.wikipedia.org/wiki/Mac_transition_to_Apple_silicon[build their own silicon].
@@ -149,7 +149,7 @@ I don't think that that bet was _necessarily_ the wrong bet,
 but it was indisputably going to be expensive and risky.
 And this gets to Gelsinger's first real, unequivocal mistake:
 **he didn't eliminate Intel's dividend.**
-Eliminating the divided would have sent an early message to 
+Eliminating the dividend would have sent an early message to 
 everyone -- shareholders and employees -- that the company's survival was at stake, and it would have helped build the war chest for the battles to come.
 While I think his dichotomy is a bit reductive,
 https://hbr.org/2011/04/peacetime-ceos-vs-wartime-ceos[Ben Horowitz's nomenclature] is useful here:  Intel needed a 
