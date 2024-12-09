@@ -208,7 +208,7 @@ that switching silicon is awaiting its "x86 moment", when open source software c
 going to get there with Tofino.
 As we looked for our post-Tofino future, we were delighted to find the Xsight Labs team and their 
 https://www.businesswire.com/news/home/20241014894143/en/Xsight-Labs-Announces-X2-Programmable-SDN-Ethernet-Switches-for-Hyperscale-and-Edge-Data-Centers-Optimized-for-the-AI-Factory-Era[X2 ASIC].  We are going to have a **lot** more to say about this part,
-but suffice it to say that we see in X2 we see both the strengths that we saw in Tofino and _also_ the potential to be
+but suffice it to say that we see in X2 both the strengths that we saw in Tofino and _also_ the potential to be
 the open substrate for programmable networking writ large.  Stay tuned!
 
 I have great reverence for Intel and its extraordinary history, and I would never count them out (the resurrection of a clinically-dead AMD shows
