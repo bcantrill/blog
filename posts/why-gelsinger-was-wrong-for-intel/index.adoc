@@ -79,8 +79,11 @@ Still, these oral histories are most interesting when they take the opportunity 
 Gelsinger's narrative of his time at Intel seemingly just went from strength to strength.  Worse,
 in his own story, the bad things at Intel always seemed to happen when he wasn't in the room or otherwise over his objections -- and
 the good things always when he was called in to save an effort from failure.  I'm sure this retelling has truth to it,
-but I found it surprising that his narrative about AMD Opteron is of Intel conquering AMD with Nahalem under
-his leadership -- with no mention of Intel's gross architectural missteps with respect to 64-bit that allowed (and even demanded!) AMD Opteron 
+but I found it surprising that his narrative about
+https://en.wikipedia.org/wiki/Opteron[AMD Opteron] is of Intel conquering AMD with
+https://en.wikipedia.org/wiki/Nehalem_(microarchitecture)[Nehalem] under
+his leadership -- with no mention of Intel's
+https://en.wikipedia.org/wiki/Itanium[gross architectural missteps with respect to 64-bit] that allowed (and even demanded!) AMD Opteron 
 in the first place.
 
 But, fine.  Again, it's an oral history; there's going to be a
