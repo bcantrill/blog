@@ -1,0 +1,27 @@
+From: Bryan Cantrill 
+Date: Wed, 27 Feb 2002 11:03:20 -0800 (PST)
+To: on-crt@lizard.eng.sun.com
+Cc: bmc@kiowa.eng.sun.com
+Subject: Reply to RTI # 4632521
+ 
+RTI#: 4632521
+Action: accept
+Integrate into: on10
+ 
+Comments:
+ 
+Approving this RTI makes me feel like John Hancock signing the Declaration of
+Independence; I just hope my e-mail address is sufficiently large that King
+Stein can read it without his spectacles!
+ 
+"We hold these truths to be self-evident, that all processes are created equal,
+that they are endowed by their Parent Process with certain unalienable Rights,
+that among these are Life, Signals, and the pursuit of Performance. -- That to
+secure these rights, Threads Libraries are instituted among Programs, deriving
+their just powers from the consent of the processes, -- That whenever any Form
+of Threads Library becomes destructive of these ends, it is the Right of the
+Gatelings to alter or to abolish it, and to institute a new Threads Library,
+laying its foundation on such principles and organizing its data structures in
+Reliability."
+
+This RTI is hereby approved; long live the one and true libthread!

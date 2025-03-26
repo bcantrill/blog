@@ -1,0 +1,107 @@
+From bmc Wed Sep  3 10:27:51 2003
+Subject: Houston, Tranquility Base here...
+To: dtrace-interest@kiowa
+Date: Wed, 3 Sep 2003 10:27:51 -0700 (PDT)
+X-Mailer: ELM [version 2.4ME+ PL31H (25)]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Content-Length:  5858
+Status: RO
+
+
+DTrace has landed.  Twenty-three months after we set out, the first cut
+of DTrace has integrated into Solaris 10.
+
+Many of you have helped DTrace enormously -- you have used it, advocated it,
+found problems with it, and suggested direction for it.  With DTrace, we
+sought very much to build the tool that we always wished we had; thanks to
+your guidance and encouragement, we have executed on that original vision --
+and much beyond.  We are grateful; your engagement in DTrace has helped make
+it what it is today.
+
+There are several people who we want to recognize for having exerted 
+extraordinary effort to help DTrace:
+
+- Bart Smaalders has been a strong advocate of DTrace from its inception, and
+  a sounding board for many ideas that found their way into DTrace.  Bart's
+  pitching of DTrace in front of both Sun employees and Sun customers has
+  been an inspiration -- not to mention an enormous help.
+
+- Gavin Maltby put together a fantastic online guide to using DTrace -- at a
+  time in which there was only the release notes, a terse usage guide, and a
+  handful of recipes.  When we went to write the documentation, we found
+  ourselves constantly referring back to this guide to see how Gavin had
+  explained something.  
+
+- Jon Haslam found an enormous number of bugs, especially in the early days of
+  DTrace on x86.  We were amazed that Jon could run into so many problems, and
+  still be such a tireless advocate for DTrace.  In particular, Jon wrote a
+  great piece on DTrace for the "Technocrat" SE publication.
+
+- Jonathan Adams performed a tremendous amount of ongoing review of the DTrace
+  source code.  Jonathan asked to be put on our putback notification when it
+  was decided that his project (Greenline) was to be a child of the DTrace
+  gate -- and he seems to have looked at the diffs for every putback.  
+  Jonathan also ended up with the impossible task of reviewing the 11,000+
+  lines in the in-kernel DTrace infrastructure.  His review was thorough, and
+  he found several issues; it is much appreciated.
+
+- Jarod Jenson of Aeysis Inc. has the distinction of being the first (and as
+  of right now, only) customer to use DTrace.  Jarod has diligently taken the
+  archives that we have sent them, and beaten the snot out of them.  DTrace
+  was designed for Jarod in mind; it has been singularly rewarding that he has
+  found DTrace to be useful.
+
+- Bill Moore -- though only rejoining Sun several months ago -- has become one
+  of DTrace's strongest advocates in that short time.  Bill used DTrace
+  with enormous success on the ZFS project -- where data gathered with DTrace
+  has helped him achieve some galactic wins on ZFS performance.  We have been 
+  elated to see such a confluence between ZFS and DTrace!
+  
+Finally, a random index that we have compiled about the DTrace project:
+
+  The DTrace Index
+  ----------------------------------------------------------------------------
+  Fake-o DTrace project bugs/RFEs fixed                                  1,171
+  Number of these that were user-reported                                  113
+  Number of d10_* builds released by DTrace project                         25
+  Putbacks to the dtrace-gate                                              364
+  Subscribers to dtrace-interest@kiowa                                     181
+  Number of people who asked to unsubscribe from dtrace-interest@kiowa       1
+  Messages sent to dtrace-interest@kiowa                                 1,242
+  Number of source files in usr/src/uts                                  1,757
+  Rank, in lines of code, of dtrace.c among these                           12
+  Rank, in number of assertions, of dtrace.c among these                     7
+  Lines in new .c and .h files created by DTrace project                54,644
+  Lines of code (lines with trailing semicolon) in same                 17,088
+  Lines of comments in same                                              6,713
+  Number of words in above comments                                     53,851
+  Pages of comments, assuming 250 words per page                           215
+  Number of _impl header files in usr/src/uts/common/sys                    65
+  Rank, in lines, of dtrace_impl.h among these                               1
+  Number of header files in usr/src/uts/common/sys                         712
+  Rank, in comment lines, of dtrace_impl.h among these                       5 
+  Rank, in comment lines, of dtrace.h among these                            4
+  Of ranks 1-3, number of which are from overcomplicated I/O frameworks      3
+  Pages of documentation written for AnswerBook                            252
+  Of these, pages written by DTrace engineers                              252
+  Number of mail messages sent for DTrace PSARC case (2001/466)             30
+  Of these, number that dealt with language issues                          26
+  Of these, number that dealt with definition of __STDC__                    5
+  Number of PSARC fast-tracks                                                5
+  Number of invention disclosures filed                                     16
+  Number of words in above                                              28,154
+  Number of tests in DTrace regression suite                               774
+  Age, in months, of DTrace project                                         23
+  Number of engineers on DTrace project                                      3
+  Number of above neither married nor engaged at beginning of project        3
+  Number of above either married or engaged at end of project                2
+ 
+It's been quite a ride.  Thanks again -- and enjoy.
+
+	Happy tracing,
+	Bryan, Mike and Adam
+
+----------------------------------------------------------------------------
+Bryan Cantrill, Solaris Kernel Development.  bmc@eng.sun.com  (650) 786-3652

@@ -1,0 +1,66 @@
+From bmc Tue Sep  2 19:01:13 2003
+Subject: VTRACE changes
+To: dtrace-core@kiowa
+Date: Tue, 2 Sep 2003 19:01:13 -0700 (PDT)
+Cc: jim.litchfield@sun.com
+X-Mailer: ELM [version 2.4ME+ PL31H (25)]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Content-Length:  2271
+Status: RO
+
+
+Well, I can say without reservation that this has been the most stressful
+day of my life.  It was reported this afternoon by Jim Litchfield that
+UltraSPARC-Is no longer booted when running non-DEBUG with our bits.
+At around 2p, Mike and I grabbed two UltraSPARC-I tip lines and went to
+work.
+
+Working in parallel, we ascertained that it was _not_ related to the 
+krtld changes, address space layout, vmem arena changes and the other
+modifications we made to common code.  We further ascertained that the
+machines _would_ boot if running non-DEBUG bits with a DEBUG esp or fas
+driver.
+
+This data lead us to this code in esp:
+
+  start_action:
++ #ifdef ESPDEBUG
+        while (action != ACTION_RETURN) {
+                ASSERT((action >= 0) && (action <= ACTION_SELECT));
+                TRACE_3(TR_FAC_SCSI, TR_ESPSVC_ACTION_CALL,
+!                       "espsvc call: esp %p, action %d (%d)",
+!                       esp, action, i);
+!               i++;
+                action = (*evec[action])(esp);
+        }
++ #endif
+  exit:
+        TRACE_0(TR_FAC_SCSI, TR_ESPSVC_END, "espsvc_end");
+  }
+
+Unfortunately, the ESPDEBUG (which was added as part of the VTRACE cleanup),
+effectively cut out the "action = (*evec[action])(esp);" line in non-DEBUG
+kernels.  As it turns out, that line's important.  And fas has a nearly 
+identical problem.
+
+With the drivers modified appropriately, both esp- and fas-based machines
+boot.  We are _greatly_ relieved to have this problem resolved -- thank you
+Jim for reporting it.
+
+The plan from here:  Mike will putback shortly to rectify the esp and 
+fas drivers.  He and I will print out all of the VTRACE diffs, and review
+them carefully again in a conference room.  Adam:  please do the same in
+parallel from home.  At ~9:30p, I will begin the sync and stage from the
+gate.  Assuming we don't find anything else in our review, that will be
+that.  If we do find other problems, they will obviously need to be
+rectified before we build.
+
+And our RTI is approved, so we're -- amazingly -- back on target.
+
+	- Bryan
+
+P.S.  I didn't even bother to mention the panic that Claudia saw today.
+She BFU'd last night when the archives happened to be updating, and got
+toxic bits.  Let's just say that that didn't lower the anxiety level at all...

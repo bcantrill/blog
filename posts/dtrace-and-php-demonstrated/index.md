@@ -5,7 +5,7 @@ categories:
   - "solaris"
 ---
 
-If you were at [my presentation at OSCON yesterday](/resources/bmc/dtrace_oscon.pdf), I apologize for the brisk pace -- there was a ton of material to cover, and forty-five minutes isn't much time. Now that I've got a little more time, I'd like to get into the details of the PHP demonstration that I did during the presentation. Here is the (very) simple PHP program that I was using:
+If you were at [my presentation at OSCON yesterday](/2005/08/16/dtrace-on-freebsd/dtrace_oscon.pdf), I apologize for the brisk pace -- there was a ton of material to cover, and forty-five minutes isn't much time. Now that I've got a little more time, I'd like to get into the details of the PHP demonstration that I did during the presentation. Here is the (very) simple PHP program that I was using:
 
 ```
 <?php
