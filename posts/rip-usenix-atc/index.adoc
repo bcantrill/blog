@@ -31,7 +31,7 @@ conference, asking
 https://bcantrill.dtrace.org/2004/07/06/whither-usenix/[whither USENIX?] This
 blog post engendered quite a bit of discussion (the bygone era of meaningful
 discourse in blog comments!) -- and an especially thoughtful long-form
-https://web.archive.org/web/20081006150917/https://www.allthingsdistributed.com/historical/archives/000482.html[response
+http://history.allthingsdistributed.com/archives/000482.html[response
 from Werner Vogels].
 
 Werner's thoughts in turn inspired
