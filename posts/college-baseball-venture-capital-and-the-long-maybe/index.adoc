@@ -209,7 +209,7 @@ reasonable justifications to extend the deadline on an offer).
 - *Multiple Term Sheets.*  The fantasy for every startup is multiple term
 sheets, as it represents leverage to get terms adjusted or to otherwise
 get the best possible deal.  For startups, this certainly
-happens, but it's not as common as what might think:  getting a term sheet
+happens, but it's not as common as one might think:  getting a term sheet
 from one VC with the intent of forcing the hand of others may in fact just
 get others to decide that they can't get there. (Or worse: _slowly_ decide
 that they can't get there!)  For college baseball players, this feels 
@@ -242,13 +242,14 @@ none) their second year, they realize that they aren't going to play -- and
 they enter the transfer portal.
 Despite being a standout high school athlete, these players can
 find that their limited college careers may result in them being
-perceived as much riskier than a known JUCO or NAIA player.
+perceived as much riskier than a known JUCO or
+https://en.wikipedia.org/wiki/National_Association_of_Intercollegiate_Athletics[NAIA] player.
 
 - *The Down Round*.  In venture capital, raising at a valuation less than
 your previous valuation is called a down round.
 In college baseball, the down round analogy is entering the transfer portal with
 a destination that is a lower division.  (To give perspective on the madness
-that is the transfer portal, as I write this there are 5,800 baseball players
+that is the transfer portal, as I write this there are 5,700 baseball players
 in the transfer portal -- and there are ~10,000 *total* Division 1 baseball
 players.)
 While a down round is undesirable for many reasons, it means that
