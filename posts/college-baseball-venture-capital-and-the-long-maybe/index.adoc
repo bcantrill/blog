@@ -38,7 +38,8 @@ even more tumultuous recruiting process.  To this dry tinder, the spark of
 https://en.wikipedia.org/wiki/Student_athlete_compensation[Name, Image, and
 Likeness (NIL) money] and the explosion of the
 https://en.wikipedia.org/wiki/NCAA_transfer_portal[NCAA transfer portal]
-changed college sports forever; the path of the student-athlete today looks
+lit a conflagration that has permanently altered college sports -- and the path of
+the student-athlete today looks
 simply nothing like their non-athlete peers.
 
 So what does it look like?  Early on in my own son's journey -- 
@@ -100,7 +101,7 @@ the institutions can use portfolio theory to mitigate their downside
 risk (a company that has no return for investors, a player that doesn't
 work out), but the greater risk
 is arguably passing on someone that _would_ have been a difference maker --
-so-called https://en.wikipedia.org/wiki/Fear_of_missing_out[FOMO].
+the https://en.wikipedia.org/wiki/Fear_of_missing_out[fear of missing out (FOMO)].
 
 === The parallels
 
@@ -114,10 +115,10 @@ college baseball). In both cases, the best story is (naturally) being told:
 they aren't dishonest, but they also aren't going to emphasize flaws or risks.
 In my experience, pitch decks are important, but not as important as the
 underlying business; similarly, terrific video of a bullpen or batting
-practice can be can't turn a baseball player into someone they aren't.
+practice can't turn a baseball player into someone they aren't.
 
 - *The Long Maybe.*  VCs need to invest out of a fund (that is, they need to
-put their capital to work), and FOMO leaves them nervous about down companies
+put their capital to work), and FOMO leaves them nervous about turning down companies
 prematurely -- they become reluctant to tell a company "no", even if it's
 plain that they will never summon the conviction to invest.  VCs call this
 "preserving optionality", but it is in fact a "long maybe" -- and it leads to
@@ -205,7 +206,7 @@ it can become a red flag if (say) a VC won't allow you to reference check
 their portfolio or a coach won't allow you to visit a campus (both emanately
 reasonable justifications to extend the deadline on an offer).
 
-- *Multiple term sheets.*  The fantasy for every startup is multiple term
+- *Multiple Term Sheets.*  The fantasy for every startup is multiple term
 sheets, as it represents leverage to get terms adjusted or to otherwise
 get the best possible deal.  For startups, this certainly
 happens, but it's not as common as what might think:  getting a term sheet
@@ -257,7 +258,7 @@ year in JUCO as a bounceback may be exactly what they need to rebuild and
 return to the highest levels of play.
 
 - *The IPO*. The dream for every startup is an initial public offering -- and
-the dream for every ballplayer is to make it to the bigs.  At some level,
+the dream for every ballplayer is to play Major League Baseball.  At some level,
 both dreams are ludicrous, but they also surely seemed outlandish many times
 over to the people who realized them.  The romance of both VC and college
 baseball is that these things can and do happen!
