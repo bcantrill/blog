@@ -1,0 +1,218 @@
+---
+title: "The end game for John Fisher"
+date: "2025-06-29"
+---
+
+A year and a half ago, 
+https://bcantrill.dtrace.org/2023/11/18/is-it-worse-for-john-fisher/[I wrote about the unconscionable John Fisher],
+the inept, soulless owner of the formerly-Oakland A's.
+When the
+team announced that it would be temporarily crashing 
+on Sacramento's couch, I pointed out that 
+https://x.com/bcantrill/status/1777097174846988376[the incompetence of this ownership knows no depth or bounds]:  they
+they
+will always find new ways to screw up.
+
+Now we are near the mid-point of that first season in Sacramento, and Fisher hasn't disappointed.
+In fact, the creativity of his innate incompetence continues to surprise, as the team has refused to even
+adopt the name of their host city:  they
+are not called the "Sacramento A's", but rather just "The Athletics" -- devoid of
+a city name entirely.
+Sacramento is a baseball town, but it's also a proud spot with a rightful
+chip on its shoulder, overlooked among California's larger cities despite its
+obvious importance to the state;
+Fisher refusing to so much as put the city's name on the team's chest is a grievous misread of the town's character.
+And it gets worse:
+because the Las Vegas Convention and Visitors Authority has formally sponsored 
+the team, fans in not-to-be-uttered Sacramento must endure the further indignity of 
+https://www.nytimes.com/athletic/6386761/2025/05/28/sacramento-athletics-majors-minors-ballpark/["Visit Las Vegas" signs plastered all over their own outfield].
+Add to this 
+https://sports.yahoo.com/article/mlb-teams-highest-lowest-median-220939712.html[the highest ticket prices in MLB], and in just a few months
+John Fisher has achieved in Sacramento what took him years in Oakland:  fans that hate his guts.
+And not only is
+https://www.sfgate.com/athletics/article/halfway-as-first-sacramento-year-business-impact-20390004.php[attendance predictably bad in Sacramento],
+the on-field product is also affected,
+with ace Luis Severino
+https://www.si.com/mlb/athletics/news/a-s-luis-severino-reiterates-that-he-doesn-t-like-pitching-west-sacramento[openly talking about how much he dislikes the minor league park].
+
+Okay, so Sacramento is a listing wreck; how are things coming along with the team's new home in Las Vegas?
+If anything, it's worse -- and
+there are so many problems with the Vegas stadium as conceived, it's hard to know where to start.
+The small site and scorching summer temperatures have necessitated 
+a fixed dome, which is
+https://www.youtube.com/watch?v=Bl8YkP3q91s[infamously problematic in baseball];
+the on-strip location is 
+https://www.youtube.com/watch?v=Fybhff7cfgE[terrible for locals];
+the https://www.youtube.com/watch?v=QiYyq_tDVGc[attendance projections are delusional];
+and the planned on-site https://www.casinoreports.com/ballys-resort-vegas-baseball-stadium-unlikely/[Bally's hotel/casino is unlikely to ever be built].
+
+And these were the problems that were clear two years ago; since then, everything has more or less moved against Fisher's plans in Vegas.
+First, on the demand side, Vegas has hit
+https://www.8newsnow.com/news/local-news/las-vegas-strip/las-vegas-tourism-in-decline-as-visitor-count-plunges-again/[economic headwinds], for
+myriad reasons:
+Vegas has gotten much more expensive; gambling is not exclusive to Vegas as it once was; 
+international tourism is way down.
+Any decline to tourism doubly hits Fisher:  not only is he
+https://www.youtube.com/watch?v=lyqj9-kmPNc[relying on tourists for a laughable 8,000 fans per game], but 
+with
+the Vegas economy itself so dependent on tourism, any decline will surely affect the local entertainment dollar as well.
+
+On the supply side, it's even grimmer:
+steel tariffs have surged, and 
+https://www.constructiondive.com/news/construction-costs-jump-tariff-iron-steel-aluminum/750735/[construction costs are up across the board].
+And the tight schedule makes it more expensive:  by not having yet started construction but with an immovable date of Opening Day 2028,
+stadium construction will
+https://www.youtube.com/watch?v=1mLFI2UbbJE[end up costing much more].
+So the stadium that was once going to cost $1.5B is now north of $1.75B -- and 
+https://www.reviewjournal.com/sports/athletics/cost-of-as-las-vegas-stadium-could-grow-to-2b-owner-fisher-says-3390257/[on its way to $2B].
+
+I bring all of this up now because
+this past Monday was a
+https://www.youtube.com/watch?v=pNqjfgYI-6U#t=2m58s["groundbreaking" for the stadium] -- which
+earned its air quotes when the needlessly hardhatted dignitaries drove their shovels not into the actual ground, but rather 
+an indoor planter (?!).
+This is already pretty bad, but groundbreakings are after all PR events, and performative digging
+is to be expected.  However, if there's one dimension you can count on John Fisher to be _truly_ groundbreaking, it's in new levels 
+of incompetence, and he delivered on Monday:
+as Doug Puppel of
+https://www.enr.com/[The Engineering News-Record] reported,
+https://x.com/dougpuppel/status/1937266091098771754[the construction equipment in the background was rented as props for the day].
+Yes, in this Potemkin groundbreaking, even the *construction equipment was a sham*.
+Why not use, like, actual construction equipment?  
+Because there isn't any -- and there isn't any, because construction hasn't _actually_ started.  And construction hasn't started because
+*John Fisher doesn't have the money.*  
+
+But wait, isn't he a billionaire?  Yes, but across essentially three illiquid assets:  his Gap inheritance; 
+the San Jose Earthquakes; and the A's.  
+In terms of money towards the project, 
+he has the (infamous) $350M from the state of Nevada, and then $300M in debt from Goldman Sachs.
+The only new source of funding in the past year is a
+$175M deal with Aramark -- though as David Samson points out,
+https://www.youtube.com/watch?v=UCdTsj9qcEo[a deal with a concessionaire as a part of stadium construction isn't that notable].
+(Also, aside:
+https://www.reddit.com/r/KitchenConfidential/comments/ysq32c/why_i_hate_aramark/[Aramark sucks].)
+
+All of this leaves John Fisher needing (at least) ~$1B.  It's easy to get numb to dollar figures, so take it from someone who has raised a bunch
+of venture capital:  that is a _lot_ of money.
+As I discussed 
+https://x.com/bcantrill/status/1794890043359982046[over a year ago],
+he can find capital in one of three ways:
+he can take on debt, he can sell equity, or he can pony up.
+
+Debt is the instrument one would normally go to for a large construction project, as it's
+non-dilutive financing.  But as
+https://x.com/tmsaran/status/1741954301004804155[Todd Saran's thread from 2024 elucidates], 
+those who underwrite debt -- banks -- are going to look at
+_cash flow_:  they need to know that they can get paid back!
+Debt analysts are going to care quite a bit about (say) the A's fanciful attendance projections.
+Traditional lenders will find plenty to puke on in the A's plans (and the $300M in debt from Goldman
+assuredly has some gnarly conditions that assures that they will get theirs).
+Now, there may be some other pockets of debt out there.
+Over at 
+https://www.youtube.com/@RickeyBlog[The Rickey Report], Alex Espinoza looked into 
+https://www.youtube.com/watch?v=sRJfMRpnmjY&t=545s[some MLB sources of funds], but these too
+are finite.  Many people believe that "MLB won't let Vegas fail", but the numbers in
+Vegas are too
+large for MLB to bail Fisher out alone -- and the two facilities
+that seem to be available from MLB to extend debt to a single team amount to just ~$225M.
+
+If debt options are exhausted, the other possibility -- and the one that John Fisher has been
+chasing for the last two years -- is to sell equity.  This is what a venture-backed business
+does to raise money:  it sells off a piece of itself, using the proceeds to run the business.
+However, there is a basic problem with selling equity in the A's to fund the stadium in Vegas:
+someone needs to buy it.
+And someone buying equity needs to make money, which they
+will do by selling their equity later at a higher price.
+So when you're buying equity in a private company, there is the obvious question:  what _is_ the
+price, anyway?  (That is, what is the company worth?)  And what _will_ it be worth in the future?  (What is
+the company's growth in valuation?)  The kinds of questions that equity investors ask are different from banks:
+namely, not how can you pay me back but how are you _growing_?
+Problematically for anyone looking at buying equity, the A's _aren't_ growing, they're shrinking: they have not only nuked their entire
+fanbase (and clearly not won any new fans in Sacramento!), they have 
+https://www.si.com/mlb/athletics/column/as-turning-off-fans-replies[had replies off on all of their social media accounts since 2023].
+It is hard to imagine a bigger red flag for a consumer-facing brand:  a brand that has so thoroughly alienated so many customers that it
+lives in fear of customers entirely.
+
+That said,
+for a sufficiently low price, equity investors could be enticed,
+and this is where it gets sticky for Fisher:  despite 
+https://www.youtube.com/watch?v=cb6psaZDo7o[the encouragement of A's fans],
+he does not, in fact, want
+to give up a controlling interest in the team.  
+For the math to work, the valuation needs to be eye-wateringly high: Forbes pegged the value of the A's
+at $1.2B (when they had a stadium!) and the Orioles sold for $1.725B last year, but neither of those valuations
+is really high enough
+for Fisher to raise the kind of dough he needs without giving up control.
+According to
+https://www.cnbc.com/2025/03/17/as-valued-at-2-billion-in-sale-of-new-shares.html[CNBC reporting],
+the A's were looking to raise $550M at a $2B enterprise valuation
+which is both absolute lunacy and _exactly_ what
+https://x.com/tmsaran/status/1741954314237808948[Todd Saran predicted eighteen months ago].
+This price is delusional 
+because it's pricing in a bunch of things that haven't happened yet
+(like building the stadium!), and the A's will be on the hook for any cost overruns -- and if they
+default on their debt in the process, the equity will be worth zero.  (If you are, like me, a 
+https://www.youtube.com/watch?v=l_NvOZRXGiU[David Samson]
+fan, you hear that "zero" followed with rhetorical florish like "zilch!" and "nada!")
+Added to all of
+the other problems in this deal:  it's been out there for a long, long time.  If you are 
+the kind of person or institution who is a candidate to participate in this deal, you have already
+seen it -- and passed on it.
+
+If debt and equity are both off the table,
+this leaves the last option, and to those with a cursory view of the A's, it's the easiest
+and most obvious:  this dude is a billionaire -- can't he just... write a check?!
+And here we get to the illiquidity of those other assets:  his Gap inheritance and
+the San Jose Earthquakes.
+There are lots of reasons why Fisher would rather not part with either:  not
+only does it run counter to his base instinct of hoarding his wealth,
+but he will also owe significant federal and (presuming he still lives in San Francisco)
+California state taxes.
+But it's an indicator of just how exhausted the other paths are that this does indeed seem to be the path that Fisher is taking:
+it was announced earlier this month that he is looking to 
+https://www.reuters.com/sports/soccer/controlling-share-san-jose-earthquakes-up-sale-2025-06-18/[sell a controlling interest in the San Jose Earthquakes].
+This isn't the only MLS team up for sale 
+(https://www.whitecapsfc.com/news/ownership-statement[the Vancouver Whitecaps are also on the block]),
+and it's not clear how much he's selling (just that it's a controlling interest) or at what price,
+but the team is worth $600M -- there's surely money to be raised by selling the stake.
+There's the Gap, too:  at Friday's close ($21.90), Fisher's 45.8M shares are worth ~$962M.
+All of this wealth is very significant, but the assets are not enough to get Fisher all the way there:
+even if he were to unload the totality of these holdings (at, say, $1.5B),
+he would owe so much in tax (up to ~37%!) that it would significantly reduce the capital available to the stadium.
+And he would _still_ be on the hook for any construction overage -- and without any financial backstop whatsoever.
+
+So Monday was significant in that it _has_ broken ground on something very important:  the end game for John Fisher.
+I don't think Fisher will find a substantial investor (it's hard to find the dumb money when
+you are, in fact, the dumb money), but it's not inconceivable that he will liquidate a significant amount of his own assets to pay for the stadium
+and its inevitable overages.
+I view this as unlikely, but I would honestly be delighted by it:  not only for the fortune he would owe in taxes, but also because he would be 
+staking his own inherited wealth on his desert folly -- and there would be a very real possibility that he would lose it all.
+It would be gloriously fitting for John Fisher, whose two existential fears are clearly that he is an incapable dunce and that he will
+fumble his birthright, to manage to confirm both in a single, spectacular disaster.
+
+But the far more likely outcome is that Fisher fiddles while Sacramento and Las Vegas burn.
+In Sacramento,
+season ticket holders -- having been badly burned by the John Fisher experience -- will not re-up.
+The MLB players union, long underserving its own membership by allowing this travesty, will demand significant changes for next year.
+Fisher himself will hold out for an equity investor in the A's, finding a way to botch (or delay) a sale of the Quakes.
+In Vegas, the progress on the stadium will be essentially nil, awaiting not merely the financing
+but the
+https://x.com/tmsaran/status/1938008329026212219[many missing pieces needed to begin construction].
+As time passes on the quiet site,
+it will be obvious that they are stalled, even
+by the comically 
+https://bsky.app/profile/jenramose.online/post/3lsd32am65227[vague schedule standard that the A's have set for themselves].
+
+Finally, at some point in the fall or perhaps early winter, it will all snap:  it will be incontrovertable that there will be
+no opening day in Vegas in 2028.  As he has done so many times before, Fisher will first try to imply that a later timeline
+was the plan all along -- but with Sacramento unsustainably molten, I suspect that MLB's patience may finally be exhausted.
+If past is any prediction, Fisher will blame both Sacramento and Las Vegas (or perhaps an Oakland conspiracy?), decry how hard all of this
+has been on him and his family, and begin talk of a new location -- or (more likely) a new city.
+
+On the one hand, this will be the moment that Salt Lake City has been waiting for, but on the other, I suspect that the chorus of warnings from Oakland
+about John Fisher will carry to Utah -- especially when joined by new voices from Sacramento and Las Vegas.
+MLB, at long last, will force the sale.
+This is still in the future, of course, but it's now foreseeable:  what John Fisher broke ground on on Monday is -- I believe -- the end game
+of his ownership.
+I just want to be there when the new ownership turns the replies back on!
+
