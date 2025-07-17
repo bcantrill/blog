@@ -1,6 +1,8 @@
 ---
 title: "Talks I have given, conversations I have had"
 date: "2018-02-03"
+aliases:
+- /2018/02/03/talks/
 ---
 
 Increasingly, some people have expressed the strange urge to binge-watch my
