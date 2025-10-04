@@ -1,0 +1,97 @@
+---
+title: "Systems Software in the Large"
+date: "2025-09-18"
+---
+
+Software is hard (yes, even in an era of
+https://www.pcmag.com/news/vibe-coding-fiasco-replite-ai-agent-goes-rogue-deletes-company-database[vibe
+coding]), and systems software -- the silent engine room of modern
+infrastructure -- is especially so.  By design, systems software provides an
+abstraction for programs, insulating programmers from the filthy details that
+lie beneath; piercing that abstraction to implement the underlying system is
+to embrace those details and their gnarly implications.  Moreover, the
+expectation for systems software is (rightly) perfection; a system that is
+merely functional can be deceptively distant from the robustness required of
+foundational software.  Systems software isn't the only kind of hard software,
+of course, and indeed software can be difficult just by nature of its scope
+and composition:  it is hard to build software that is just... big.  Software
+that consists of many different modules and components built by multiple
+people over an extended period of time is known as
+https://en.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small#Programming_in_the_large[programming
+in the large], and its difficulties extend beyond the mere implementation
+challenges of systems software.
+
+Because the difficulties with developing systems software are broadly
+orthogonal to those of programming in the large, intersecting these two
+challenges -- that is, developing systems software in the large -- is to take
+on the most grueling of projects: it is the stuff of which
+https://en.wikipedia.org/wiki/The_Mythical_Man-Month[mythical man months] are
+literally made.  Why would anyone ever develop such a system?  Because they
+are often necessary to tackle software's equivalents of the
+https://en.wikipedia.org/wiki/Wicked_problem[wicked problem]: problems that
+are not only never completely solved, but also not even really understood
+until implementation is well underway.  There are not pat answers for
+developing these systems -- nor, infamously,
+https://oxide-and-friends.transistor.fm/episodes/no-silver-bullets[silver
+bullets] -- they're just...  brutal.
+
+This is on my mind because of a talk that we had at OxCon last week.  OxCon is
+our affectionate name for the annual Oxide meetup here in Emeryville, and it's
+a highlight of the year for everyone at Oxide.  This year more than lived up
+to our high expectations, replete with cameos from the extraordinary
+https://www.youtube.com/watch?v=2_A_PfLSYOM[IBM 26 Interpreting Card Punch]
+and https://bsky.app/profile/bcantrill.bsky.social/post/3lymmhpuoek2s[the
+Oakland Ballers].  At OxCon we like to both reflect back and look forward, so
+in that spirit, we asked Oxide engineer Dave Pacheco if he might be willing to
+present on the project he's been leading the charge on for the past two years:
+software update.
+
+When we shipped the first Oxide rack two years ago, it had the minimum
+functionality necessary to update all its software in the field.  Our priority
+was to make this update mechanism robust over all else, and we succeeded in
+the sense that it is indeed robust -- but the experience is not yet
+the seamless, self-service facility that we have envisioned.  Software
+update for the Oxide rack is exactly the kind of wicked problem that
+necessitates systems software in the large: it is not merely dynamically
+overhauling a distributed system, but doing so while remaining operable in the
+liminal state between the old software and the new.  Compounding this was the
+urgency we felt:  delivering self-service update is essential to realize our
+vision of the cloud experience on premises, and our customers needed it as
+soon as we could deliver it.  As if this weren't enough, the Oxide update
+problem has an acute constraint not faced by the public clouds:  we need to be
+able to deliver updates across an
+https://en.wikipedia.org/wiki/Air_gap_(networking)[air gap] -- we cannot rely
+on the public cloud's hidden crutch of operators and runbooks.  It is a
+problem so wicked, you can practically hear it cackle.
+
+Despite the thorniness of the problem, Dave and team had managed to achieve the
+ambitious milestones that they had set for themselves at OxCon last year, and I
+was naturally excited for his presentation this year.  That said, I wasn't
+ready for what was coming:  Dave not only described the tremendous work on
+software update (delving into both the multi-year history of the project and
+the significant progress since the last OxCon), but also reflected on leading
+the software update project itself.  The result was an absolutely extraordinary
+talk, not just on the mechanics of software essential to Oxide, but on the
+unique challenges of systems software in the large.
+
+Dave's talk dripped with hard-won wisdom, running the gamut from maintaining
+focus (and the looming specter of what Dave calls "organizational
+procrastination") to fighting scope creep and the mechanics of specific
+technical decisions.  We felt Dave's talk to be too good to be kept to
+ourselves -- and thanks to our transparency, nothing in it needs to be secret;
+we are thrilled to be able to make it generally available:
+
+++++
+<div class="youtube-embed">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/M-ZLz8Wg34s" title="Update on Update" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+++++
+
+This talk is a *must watch* for anyone doing systems software in the large,
+containing within it the kind of lessons that are often only
+https://speakerdeck.com/bcantrill/things-i-learned-the-hard-way[learned the
+hard way].  While we think it's valuable for everyone, should you be the kind
+of sicko inexplicably drawn to exactly the kind of nasty problems that Dave
+describes, consider link:/careers/sw-control-plane[joining us] -- there is more
+systems software in the large to be done at Oxide!
+
