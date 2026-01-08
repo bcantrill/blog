@@ -1,0 +1,27 @@
+---
+title: "The right place at the right time"
+date: "2026-01-08"
+---
+
+Recently, 
+https://thenewstack.io/bryan-cantrill-how-kubernetes-broke-the-aws-cloud-monopoly/[the New Stack had a piece]
+excerpting some of 
+https://newsletter.pragmaticengineer.com/p/the-history-of-servers-the-cloud[my
+conversation with Gergely Orosz].
+In introducing me in the piece, Joab Jackson writes "Cantrill has had a knack at being at the right place at the right time." While this is objectively true at some level, it also gave me a double take:
+it rarely *felt* true at the time.
+
+When I entered university in 1992, it didn't feel like the right time: the economy for new grads was very grim -- and I knew plenty of folks who had done at well at top schools who were struggling to find work (and accepting part time jobs that didn't need a college degree at all while they searched for something better).  I never doubted going to school, but I also have never taken a job for granted.
+
+When I fell in love with computer science as an undergraduate and realized that I wanted to become a software engineer, it didn't feel like the right time:  Ed Yourdon had just written _The Decline and Fall of the American Programmer_, which boldly told any young computer science student that they were wasting their time -- that all programming jobs would be done by cheap labor abroad.  This argument felt wrong, but I was too in love with computer science to be talked out of it anyway.
+
+When I decided that I was specifically interested in operating systems kernel development, it definitely didn't feel like the right time: the conventional wisdom in the mid-1990s was that operating systems were done -- that Unix was in decline and that the future clearly belonged to Microsoft.  I ardently disagreed with this, and my conviction brought me in 1996 to the one company that unequivocally shared it:  Sun Microsystems.
+
+When the internet exploded in the late-1990s, I was -- at last -- at the right place at the right time.  But it was short-lived:  when the Dot Com Boom turned to a Dot Com Bust, we were fighting conventional wisdom yet again. Didn't the bust mean that there was no future to this stuff?
+
+When we started Oxide in 2019, it was almost comforting when it didn't feel like the right time: Sand Hill investors told us that "we only fund SaaS companies", that our $20M seed round was "too big", that "there is no market."  (And most absurdly: "if this is such a good idea, why are you the only ones doing it?") Six years later -- with VMware customers wanting to get away from Broadcom and with frontier AI companies realizing that there is (in fact!) a lot of general purpose CPU involved in their workloads -- our timing looks perfect, but in fact we are just resilient.
+
+So, my advice: have the courage to follow your heart -- and disregard what others say about your timing.  This is not an assurance of an easy path (to the contrary, going your own way will assuredly be a struggle!), but you will have the solace of knowing that you were true to yourself -- that you did your best work. And who knows:  maybe years down the stretch, someone will observe that you have the knack for the very thing that you disregarded...
+
+_Note: Also published as
+https://www.linkedin.com/posts/bryan-cantrill-b6a1_recently-the-the-new-stack-had-a-piece-excerpting-activity-7415137978307543040-MpaJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAADUIBvmFvrlB3qaOplWrifjHF0EoJmqg[a LinkedIn post]._
